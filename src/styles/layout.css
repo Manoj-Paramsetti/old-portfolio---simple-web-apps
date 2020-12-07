@@ -4,9 +4,10 @@ body{
   overflow-x: hidden; 
 }
 .avatar {
-	display: block;
+	display: inline;
 	overflow: hidden;
 	line-height: 1;
+	float: left;
 	vertical-align: middle;
 	background-color: var(--color-avatar-bg);
 	border-radius: 6px;

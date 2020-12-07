@@ -1,7 +1,8 @@
 body{
-  background-color: #DDDDDD;
+  background-color: #FFFFFF;
   width: 100%;
-  overflow-x: hidden; 
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 .avatar {
 	display: inline;
@@ -79,7 +80,6 @@ float:left;
 .aboutMe{
   position: relative;
   text-align: left;
-  margin-top: -10px;
   background-image: linear-gradient( rgba(0,0,0,.0), rgba(0,0,0,.8) ),
   url('https://codete.com/blog/wp-content/uploads/2020/06/custom-elearning-software-cover-2000x1340.jpg');
   background-repeat: no-repeat;
@@ -92,3 +92,60 @@ float:left;
   font-family: 'Open Sans', sans-serif;
   vertical-align: middle;
 }
+.ContMe{
+  position: relative;
+  background-color: #ffffff;
+  height:auto;
+  padding-left: 50px;
+  margin: -.65em;
+  width:100%;
+}
+form{align-self: center;
+align-items: center;align-content: center;text-align: center;}
+.start{
+  margin: 0px;
+}
+input{font-size: 16px;}
+input[type=text], select {
+    margin-top:-80px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-weight: bold;
+    border: 1px solid #eeeDDD;
+    background-color: #DDDDDD;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  a{
+    color:black;
+  }
+
+  input[type=email], select {
+      padding: 12px 20px;
+      font-weight: bold;
+      margin: 8px 0;
+      border: 1px solid #eeeDDD;
+      background-color: #DDDDDD;
+      border-radius: 4px;
+      width:37%;
+      box-sizing: border-box;
+    }
+
+input[type=submit] {
+    width: 10%;
+    background-color: #0022ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    background: linear-gradient( rgba(0, 30, 255,.9), rgba(0,0,255,.9) );
+    font-weight: bold;
+    color: white;
+
+  }

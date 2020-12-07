@@ -9,7 +9,7 @@ body{
     box-sizing: border-box;
     color: var(--black-700);
     font-size: 14px;
-    zindex:999;
+    z-index:999;
     background-color: var(--white);
     box-shadow: var(--bs-sm);
     background-color: #FFFFFF;

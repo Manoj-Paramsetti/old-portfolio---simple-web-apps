@@ -19,7 +19,7 @@ body{
     border-radius:0px 0px 8px 8px;
     width: 100%;
     margin: -.67em;
-    position: float;
+    position: fixed;
 }
 .lefthead{
 padding-left: 15px;

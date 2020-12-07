@@ -1,6 +1,6 @@
 body{
   background-color: #DDDDDD;
-  width:100vw;
+  width:100%;
 }
 .header{
     box-sizing: border-box;
@@ -34,7 +34,7 @@ float:left;
   position: relative;
   text-align: center;
   background-image: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.5) ),url('https://www.freecodecamp.org/news/content/images/2020/03/illustration_cover.png');
-  width: 100vw;
+  width: 100%;
   height:100vh;
   color: #ffffff;
   margin-left: -10px;
@@ -64,7 +64,7 @@ float:left;
   url('https://images.creativemarket.com/0.1.0/ps/257100/300/200/m2/fpnw/wm0/1160x772-.jpg?1417428495&s=1006b6b96da03f324e9fb27c19b0c199');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: #ffffff;
   margin-left: -10px;

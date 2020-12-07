@@ -54,7 +54,7 @@ float:left;
 .welcome{
   position: relative;
   text-align: center;
-  background-image: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.5) ),url('https://www.freecodecamp.org/news/content/images/2020/03/illustration_cover.png');
+  background-image: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.5) ),url('https://wallpaperaccess.com/full/2820590.jpg');
   width: 100%;
   height:52vh;
   color: #ffffff;
@@ -81,7 +81,7 @@ float:left;
   text-align: left;
   margin-top: -10px;
   background-image: linear-gradient( rgba(0,0,0,.0), rgba(0,0,0,.8) ),
-  url('https://codete.com/blog/wp-content/uploads/2020/06/custom-elearning-software-cover-2000x1340.jpg');
+  url('https://i.pinimg.com/originals/61/db/34/61db349af8934bca9bf571fcd5571e1f.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

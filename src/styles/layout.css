@@ -62,9 +62,9 @@ float:left;
   background-image: linear-gradient( rgba(0,0,0,.0), rgba(0,0,0,.8) ),
   url('https://codete.com/blog/wp-content/uploads/2019/02/tech-abstract-cover.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: stretch;
   height: 100vh;
-  width: 96vw;
+  width: 100vw;
   color: #ffffff;
   margin-left: -10px;
   line-height: 8px;

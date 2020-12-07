@@ -98,7 +98,7 @@ float:left;
   height:auto;
   padding-left: 50px;
   margin: -.65em;
-  width:100%;
+  width:100vw;
 }
 form{align-self: center;
 align-items: center;align-content: center;text-align: center;}

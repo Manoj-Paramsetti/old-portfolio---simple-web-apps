@@ -1,3 +1,4 @@
 # Manoj-Paramsetti.github.io
-My personal website/n
+My personal website
+
 try to visit https://manoj-paramsetti.github.io

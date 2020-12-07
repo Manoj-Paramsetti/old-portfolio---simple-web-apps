@@ -39,7 +39,8 @@ padding-left: 15px;
 font-family: 'Open Sans', sans-serif;
 align-items: center;
 justify-content: center;
-text-align:left;
+display: flex;
+text-align:center;
 float:left;
 }
 .righthead{

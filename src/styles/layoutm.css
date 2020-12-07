@@ -14,7 +14,7 @@ body{
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06);
     border-radius:0px 0px 8px 8px;
-    width: 100%;
+    width: 100vw;
     margin: -.67em;
     position: absolute;
 }

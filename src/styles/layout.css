@@ -14,6 +14,7 @@ body{
 	box-shadow: 0 0 0 1px var(--color-avatar-border);
 }
 .avatar-user {
+	display: inline;
 	border-radius: 50% !important;
 }
 .header{

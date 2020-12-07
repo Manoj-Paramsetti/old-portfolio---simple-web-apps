@@ -3,6 +3,18 @@ body{
   width: 100%;
   overflow-x: hidden; 
 }
+.avatar {
+	display: inline-block;
+	overflow: hidden;
+	line-height: 1;
+	vertical-align: middle;
+	background-color: var(--color-avatar-bg);
+	border-radius: 6px;
+	box-shadow: 0 0 0 1px var(--color-avatar-border);
+}
+.avatar-user {
+	border-radius: 50% !important;
+}
 .header{
     box-sizing: border-box;
     color: var(--black-700);

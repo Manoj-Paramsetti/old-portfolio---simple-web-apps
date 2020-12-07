@@ -37,11 +37,15 @@ body{
 .lefthead{
 padding-left: 15px;
 font-family: 'Open Sans', sans-serif;
+align-items: center;
+justify-content: center;
 text-align:left;
 float:left;
 }
 .righthead{
   float:right;
+  align-items: center;
+  justify-content: center;
   padding-right: 5px;
   padding-top: 7px;
 }

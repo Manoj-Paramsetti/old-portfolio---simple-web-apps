@@ -8,10 +8,6 @@
   <script>
     if(window.innerHeight > window.innerWidth){window.location.replace("https://manoj-paramsetti.github.io/m.html");}
     window.addEventListener(orientationEvent, function() {window.location.replace("https://manoj-paramsetti.github.io/index.html");}, true);
-    $(window).on("load", function () {
-    console.log("load");
-    $("div.inner-wrapper").fadeOut();
-});
 </script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
@@ -36,6 +32,11 @@
   </div>
 
 <div class="inner-wrapper"><span class="loader"><span class="loader-inner"></span></span></div>
+ <script>
+    $(window).on("load", function () {
+    console.log("load");
+    $(".inner-wrapper").fadeOut();
+});</script>
   <div class="downAnchor">
     <h3>Come and connect with me in LinkedIn and Github<h3>
   </div>

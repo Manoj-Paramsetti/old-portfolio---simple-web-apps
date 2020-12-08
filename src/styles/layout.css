@@ -9,6 +9,7 @@ body{
 	height:100%;
 	position:absolute;
 	top:0;
+	z-index:999;
 	left:0;
 	background-color:#242f2f;
 	display:flex;
@@ -64,7 +65,7 @@ body{
     box-sizing: border-box;
     color: var(--black-700);
     font-size: 14px;
-    z-index:999;
+    z-index:2;
     background-color: var(--white);
     box-shadow: var(--bs-sm);
     background-color: #FFFFFF;

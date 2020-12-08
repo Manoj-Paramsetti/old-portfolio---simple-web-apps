@@ -29,7 +29,7 @@ body{
 	display:inline-block;
 	width:100%;
 	background-color:#fff;
-	animation: load-innner 2s infinite ease-in;
+	animation: loader-innner 2s infinite ease-in;
 }
 @keyframes loader{
 	

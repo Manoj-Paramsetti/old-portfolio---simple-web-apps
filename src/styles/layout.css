@@ -192,7 +192,8 @@ float:left;
 }
 .aboutMe{
   position: relative;
-  background:#ffffff;
+  background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.8) ),
+  url('https://codete.com/blog/wp-content/uploads/2020/06/custom-elearning-software-cover-2000x1340.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -200,7 +201,7 @@ float:left;
   min-height:100vh;
   padding-right: 20px;
   padding-bottom: 50px;
-  color: #000000;
+  color: #ffffff;
   padding-left: 20px;
   font-family: 'Open Sans', sans-serif;
   vertical-align: middle;
@@ -215,12 +216,12 @@ float:left;
   overflow-x: hidden;
 }
 .bottom{
-  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)),url('https://9cover.com/images/ccovers/1365344184nature-mountains-in-himalaya.jpg');
+  background-color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .About{
   display: inline-block;

@@ -218,6 +218,11 @@ float:left;
 .bottom{
   background-color: #111111;
   background-size: cover;
+  min-height: 35vh;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;

@@ -8,4 +8,4 @@ Try to visit https://manoj-paramsetti.github.io
 Paramsetti Manoj
 
 ## Used Languages
-CSS and HTML
+CSS, JavaScript and HTML

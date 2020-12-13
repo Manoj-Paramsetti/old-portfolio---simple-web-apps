@@ -216,12 +216,11 @@ float:left;
   overflow-x: hidden;
 }
 .bottom{
-  background-color: #ffffff;
+  background-color: #222222;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  background-color: #000000;
 }
 .About{
   display: inline-block;

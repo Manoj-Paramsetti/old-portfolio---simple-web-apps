@@ -192,8 +192,7 @@ float:left;
 }
 .aboutMe{
   position: relative;
-  background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.8) ),
-  url('https://codete.com/blog/wp-content/uploads/2020/06/custom-elearning-software-cover-2000x1340.jpg');
+  background:#ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -201,7 +200,7 @@ float:left;
   min-height:100vh;
   padding-right: 20px;
   padding-bottom: 50px;
-  color: #ffffff;
+  color: #000000;
   padding-left: 20px;
   font-family: 'Open Sans', sans-serif;
   vertical-align: middle;

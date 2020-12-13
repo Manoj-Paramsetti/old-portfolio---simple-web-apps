@@ -198,6 +198,7 @@ float:left;
   background-size: cover;
   width: 100vw;
   height: auto;
+  min-height:100vh;
   padding-right: 20px;
   padding-bottom: 50px;
   color: #ffffff;

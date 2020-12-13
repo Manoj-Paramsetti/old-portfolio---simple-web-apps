@@ -6,48 +6,86 @@ body{
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
-.inner-wrapper{
+.preload-finish{
+  pointer-events: none;
+  opacity: 0;
+}
+.innerwrapper{
 	width:100%;
+  position: fixed;
 	height:100%;
-	position:absolute;
 	top:0;
 	z-index:999;
 	left:0;
-	background-color:#242f2f;
+	background:#5500ff;
 	display:flex;
+  text-align: center;
 	justify-content:center;
 	align-items:center;
+  animation: colorchanger 5s infinite linear;
 }
-.loader{
-	display:flex;
-	width:30px;
-	height:30px;
-	position:relative;
-	border:4px solid #FFF;
-	animation: loader 2s infinite ease;
+@keyframes colorchanger {
+10%{background: #0000ff;}
+40%{background: #ff00ff;}
+50%{background: #9944bb;}
+60%{background: #006aff;}
+70%{background: #2800ff;}
+80%{background: #b600ff;}
+90%{background: #ff00ae;}
+100%{background: #000fff;}
 }
-.loader-inner{
-	vertical-align:top;
-	display:inline-block;
-	width:100%;
-	background-color:#fff;
-	animation: loader-innner 2s infinite ease-in;
+.cube3{
+  background-color: #ffffff;
+  width: 6px;
+  height: 60px;
+  border-radius: 3px;
+  justify-content: center;
+  display: inherit;
+  animation: osc3 1s infinite alternate;
 }
-@keyframes loader{
-
-	0%{transform:rotate(0deg);}
-	25%{transform:rotate(100deg);}
-	50%{transform:rotate(180deg);}
-	75%{transform:rotate(360deg);}
-	100%{transform:rotate(0deg);}
+.cube2{
+  background-color: #ffffff;
+  width: 6px;
+  height: 60px;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  display: inherit;
+  animation: osc2 1s infinite alternate;
 }
-@keyframes loader-inner{
-  0%{height:0%;}
-	5%{height:0%;}
-	25%{height:0%;}
-	50%{height:100%;}
-	75%{height:100%;}
-	100%{height:0%;}
+.cube1{
+  background-color: #ffffff;
+  width: 6px;
+  height: 60px;
+  border-radius: 3px;
+  justify-content: center;
+  display: inherit;
+  animation: osc 1s infinite alternate;
+}
+@keyframes osc{
+  0%{height:8%;}
+	5%{height:6%;}
+	25%{height:4%;}
+	50%{height:2%;}
+	75%{height:4%;}
+	100%{height:8%;}
+}
+@keyframes osc2{
+  0%{height:12%;}
+	5%{height:8%;}
+	25%{height:4%;}
+	50%{height:6%;}
+	75%{height:8%;}
+	100%{height:12%;}
+}
+@keyframes osc3{
+0%{height:8%;}
+5%{height:4%;}
+25%{height:2%;}
+50%{height:4%;}
+75%{height:6%;}
+100%{height:8%;}
 }
 .avatar {
 	display: inline;
@@ -92,6 +130,18 @@ body{
     width: 100%;
     position: fixed;
 }
+@keyframes colorchangerfont {
+10%{color:  #f00fff;}
+20%{color: #ffa400;}
+30%{color: #e6ff00;}
+40%{color: #21ff00;}
+50%{color: #00ffb1;}
+60%{color: #006aff;}
+70%{color: #2800ff;}
+80%{color: #b600ff;}
+90%{color: #ff00ae;}
+100%{color: #ff0029;}
+}
 .lefthead{
 padding-top: 10px;
 padding-left: 15px;
@@ -109,10 +159,15 @@ float:left;
   padding-right: 5px;
   padding-top: 7px;
 }
+.righthead img:hover{
+  height: 48px;
+}
 .welcome{
   position: relative;
   text-align: center;
-  background-image: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.5) ),url('https://www.freecodecamp.org/news/content/images/2020/03/illustration_cover.png');
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.5) ),url('https://cdn.wallpapersafari.com/23/49/O4FKqB.jpg');
   width: 100%;
   height:100vh;
   color: #ffffff;
@@ -160,7 +215,7 @@ float:left;
   overflow-x: hidden;
 }
 .bottom{
-  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)),url('https://wallpapercave.com/wp/x4df4H0.jpg');
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)),url('https://9cover.com/images/ccovers/1365344184nature-mountains-in-himalaya.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,13 +249,13 @@ float:left;
 .ContMe{
   float: right;
   position:relative;
-  background: linear-gradient(to right,#3700B3,#6200EE);
+  background: linear-gradient(to right,#dd081a,#ff7b00);
   color: white;
   height:auto;
   padding-left: 20px;
   width:100%;
 }
-.ContMe a{color: white;}
+.ContMe a{color: white;position: flex;}
 .ContMe a:hover{font-weight: 100;position: static;}
 form{align-self: center;
 align-items: center;align-content: center;text-align: center;}

@@ -1,4 +1,11 @@
 # Manoj-Paramsetti.github.io
-My personal website
+Hey Floks!
 
-visit https://manoj-paramsetti.github.io
+I'm happy that you're visited my GitHub Page. This respository is for my personal portfolio where you can find my contact deatils and much more.
+Try to visit https://manoj-paramsetti.github.io
+ 
+## Author
+Paramsetti Manoj
+
+## Used Languages
+CSS and HTML

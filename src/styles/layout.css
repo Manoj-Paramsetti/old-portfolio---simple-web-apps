@@ -227,11 +227,10 @@ float:left;
   justify-content: center;
   display: flex;
   align-items: center;
-  background-repeat: no-repeat;
   background-size: cover;
   color: white;
 }
-.bottom : hover{
+.bottom :hover{
 background-color:#ffffff;
 color:black;
 }

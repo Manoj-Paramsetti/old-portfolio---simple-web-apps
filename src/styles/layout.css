@@ -222,8 +222,8 @@ float:left;
   height: auto;
   z-index:10;
   position:relative;
-  box-shadow:   0px 5.3px rgba(255, 255, 255, 0.3),
-     		0px -5.3px rgba(255, 255, 255, 0.5);
+  box-shadow:   0px 5.3px rgba(255, 255, 255, 0.2),
+     		0px -5.3px rgba(255, 255, 255, 0.2);
   justify-content: center;
   display: flex;
   align-items: center;
@@ -274,21 +274,23 @@ align-items: center;align-content: center;text-align: center;}
 .start{
   margin: 0px;
 }
-input{font-size: 16px;}
+input{
+	font-size: 16px;
+}
 input[type=text], select {
-    margin-top:-80px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    font-weight: bold;
-    border: 1px solid #eeeDDD;
-    background-color: #DDDDDD;
-    border-radius: 4px;
-    box-sizing: border-box;
+	margin-top:-80px;
+    	padding: 12px 20px;
+    	margin: 8px 0;
+    	font-weight: bold;
+    	border: 1px solid #eeeDDD;
+    	background-color: #DDDDDD;
+    	border-radius: 4px;
+    	box-sizing: border-box;
   }
   a{
-    color:black;
-    text-decoration: none;
-    Cursor:pointer;
+ 	color:black;
+    	text-decoration: none;
+    	cursor:pointer;
   }
 
   input[type=email], select {

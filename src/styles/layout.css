@@ -231,6 +231,10 @@ float:left;
   background-size: cover;
   color: white;
 }
+.bottom : hover{
+background:#ffffff;
+color:black;
+}
 .About{
   display: inline-block;
   position: relative;

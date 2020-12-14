@@ -6,7 +6,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
-p{ -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none; unselectable="on";}
+p,h1,h2,h3,h4,h5,h6{ -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none; unselectable="on";}
 .preload-finish{
   pointer-events: none;
   opacity: 0;

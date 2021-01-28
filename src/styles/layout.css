@@ -188,12 +188,15 @@ float:left;
 .upAnchor{
   top: 2;
 <<<<<<< HEAD
+<<<<<<< HEAD
   right: 0;
   width: 50vh;
   align-items: center;
   text-align: center;
   color: #121212;
 =======
+=======
+>>>>>>> parent of 14ecef6 (header2)
   position: static;
 }
 .downAnchor{

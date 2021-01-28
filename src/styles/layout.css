@@ -187,19 +187,22 @@ float:left;
 }
 .upAnchor{
   top: 2;
-  left: 0;
+  right: 0;
   width: 50vh;
-    align-items: center;
+  align-items: center;
   text-align: center;
-  justify-content: center;
-  position: flex;
-}
-.downAnchor{
+  color: #121212;
   position: absolute;
-  bottom: 20px;
-  width: 100vw;
-  text-align: center;
-  font-size: auto;
+  right: 0;
+}
+.DownAnchor{
+    top: 2;
+    left: 0;
+    width: 50vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
 }
 .aboutMe{
   position: relative;

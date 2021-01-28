@@ -237,7 +237,7 @@ color:black;
   position: relative;
 }
 .Text{
-  min-width: 500px;
+  max-width: 600px;
 }
 .project{
   display: absolute;

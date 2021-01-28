@@ -187,7 +187,12 @@ float:left;
 }
 .upAnchor{
   top: 2;
-  position: static;
+  left: 0;
+  width: 50vh;
+    align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: flex;
 }
 .downAnchor{
   position: absolute;

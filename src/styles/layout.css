@@ -236,7 +236,9 @@ color:black;
   display: inline-block;
   position: relative;
 }
-
+.Text{
+  min-width: 500px;
+}
 .project{
   display: absolute;
   text-align: center;

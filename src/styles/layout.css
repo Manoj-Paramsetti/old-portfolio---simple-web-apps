@@ -65,6 +65,7 @@ body{
   height: 100vh;
   display: flex;
   padding-top: 90px;
+  padding-bottom: 20px;
   z-index: 1;
   box-shadow:
       0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -100,6 +101,7 @@ body{
   height: auto;
   padding-left: 35px;
   padding-right: 35px;
+  padding-bottom: 20px;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -123,6 +125,7 @@ body{
   width: 100vw;
   min-height: 100vh;
   height: auto;
+  padding-bottom: 20px;
   z-index: 4;
   padding-left: 35px;
   padding-right: 35px;

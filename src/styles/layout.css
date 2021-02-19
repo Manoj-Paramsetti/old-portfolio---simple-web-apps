@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: #121212;
+  background-color: #FFFFFF;
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
@@ -27,6 +27,8 @@ body{
 #Leftbar{
   float: left;
   width: 50%;
+  padding-top: -2px;
+  padding-left: 3vw;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -50,7 +52,13 @@ body{
   color: #112121;
   text-decoration: none;
 }
+#Rightbar a:hover{
+  color: #444499;
+}
 
+#Rightbar a:active{
+  color: #444499;
+}
 #menu{
     visibility: hidden;
 }
@@ -63,16 +71,12 @@ body{
 #FirstContent{
   background: #FFFFFF;
   width: 100vw;
-  padding-left: 20px;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
+  padding-left: 20px;
   padding-top: 90px;
   padding-bottom: 20px;
-  z-index: 1;
-  box-shadow:
-      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      0 12.5px 10px rgba(0, 0, 0, 0.06);
 }
 
 .LeftContent{
@@ -101,6 +105,7 @@ body{
   width: 100vw;
   min-height: 100vh;
   height: auto;
+  display: flex;
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 20px;
@@ -129,6 +134,7 @@ body{
   height: auto;
   padding-bottom: 20px;
   z-index: 4;
+  display: flex;
   padding-left: 35px;
   padding-right: 35px;
   box-shadow:
@@ -147,11 +153,27 @@ body{
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 20px;
+  display:flex;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
       0 0 12.5px 10px rgba(0, 0, 0, 0.06);
 }
+
+#projectleft{
+  float: left;
+  display: block;
+  width:50%;
+}
+#projectright{
+  float: right;
+  width:50%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  text-align: right;
+}
+
 /*Base "a" of project*/
 #Project a{
   text-decoration: none;
@@ -180,10 +202,9 @@ body{
   width: 100vw;
   height: auto;
   text-align: center;
-  position: relative;
-  display: absolute;
+  position: absolute;
   padding: 10px;
-  bottom: -1;
+  padding-bottom: 10px;
 }
 
 /*Base of footer*/
@@ -204,7 +225,8 @@ body{
     height: 60%;
   }
   .RightContent{
-    padding-top: 0;
+    bottom: 0;
+    padding-top: 20vh;
     padding-bottom: 20vh;
   }
   #Rightbar{
@@ -215,9 +237,24 @@ body{
     visibility: visible;
   }
   #footer{
-    height: 50px;
+    height: auto;
   }
   body {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #projectright{
+    float: right;
+    width:50%;
+    justify-content: center;
+    display: none;
+    text-align: right;
+  }
+  #projectleft{
+    float: left;
+    width:100%;
+    justify-content: center;
+    text-align: center;
   }
 }

@@ -1,13 +1,15 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
 body{
   background-color: #121212;
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #Topbar{

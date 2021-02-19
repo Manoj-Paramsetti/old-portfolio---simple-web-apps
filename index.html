@@ -18,154 +18,158 @@
   </head>
 
   <body>
+      <!--scrollable area-->
+      <div id="Topbar">
+        <!--left side of the titlebar-->
+        <div id="Leftbar">
+          <a href="#FirstContent">Paramsetti Manoj</a>
+        </div>
+        <!--Rigth side of the titlebar-->
+        <div id="Rightbar">
+          <!--Navigation-->
+          <a href="#Education">Education</a>
+          <a href="#Experience">Experience</a>
+          <a href="#Project">Projects</a>
+          <a href="#Contact">Contact</a>
+        </div>
+        <!--Menu only visible for 720px-->
+        <div id="menu">
+          <script>
+            function visic() {
 
-    <div id="Topbar">
-      <!--left side of the titlebar-->
-      <div id="Leftbar">
-        <a href="#FirstContent">Paramsetti Manoj</a>
-      </div>
-      <!--Rigth side of the titlebar-->
-      <div id="Rightbar">
-        <!--Navigation-->
-        <a href="#Education">Education</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Project">Projects</a>
-        <a href="#Contact">Contact</a>
-      </div>
-      <!--Menu only visible for 720px-->
-      <div id="menu">
-        <script>
-          function visic() {
-
-             var img1 = "https://Manoj-Paramsetti.github.io/img/resume.png";
-             var img2 = "https://Manoj-Paramsetti.github.io/img/download-logo.png";
-             var content = document.getElementById('pic');
-             console.log(content.src);
-             if (content.src == img2){
-               content.src = img1;
-             }
-            else{
-              content.src = img2;
+               var img1 = "https://Manoj-Paramsetti.github.io/img/resume.png";
+               var img2 = "https://Manoj-Paramsetti.github.io/img/download-logo.png";
+               var content = document.getElementById('pic');
+               console.log(content.src);
+               if (content.src == img2){
+                 content.src = img1;
+               }
+              else{
+                content.src = img2;
+              }
             }
-          }
-        </script>
-        <a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-          <img src="img/resume.png" id= "pic" onclick="visic();" height="24px" alt="Image not found">
-        </a>
-      </div>
-      <!--End of Topbar-->
-    </div>
-
-
-    <div id="FirstContent">
-      <!--LeftContent-->
-      <div class="LeftContent">
-          <img src="src/styles/SVG/firstcon.svg" width="80%" height="60%" alt="">
-      </div>
-      <!--RightContent-->
-      <div class="RightContent">
-          <h1>Welcome to my website!</h1>
-          I'm happy that you have visited my portfolio
-      </div>
-      <!--End of FirstContent-->
-    </div>
-
-    <div id="Education">
-      <h1>Education</H1><br>    
+          </script>
           <a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-            <img src="img/resume.png" id= "pic" onclick="visic();" height="24px" alt="Resume  ">
+            <img src="img/resume.png" id= "pic" onclick="visic();" height="24px" alt="Image not found">
           </a>
+        </div>
+        <!--End of Topbar-->
+      </div>
 
-          <div class="school">
-            <p>
-              <H2>B.E Computer Science and Engineering</H2>
-                  Sathyabama Institute of Science and Technology<br>
-                  Autumn 20 - Spring 24
-            </p><br><br>
-            <p>
-              <H2>HSC - Physics, Chemistry, Maths, and Computer Science</H2>
-                  Madras Christian College Higher Secondary School<br>
-                  Summer 18 - Spring 20
-            </p><br><br>
-            <p>
-              <H2>SSLC</H2>
-              Loyola Matriculation Higher Secondary School<br>
-              Summer 16 - Spring 18
-            </p>
 
-          </div>
-      <!--End of FirstContent-->
-    </div>
-    <div id="Experience">
-      <h1>Experience</h1><br><a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-            <img src="img/download-logo.png" id= "pic" onclick="visic();" height="24px" alt="Resume">
-          </a><br><br>
+      <div id="FirstContent">
+        <!--LeftContent-->
+        <div class="LeftContent">
+            <img src="src/styles/SVG/firstcon.svg" width="80%" height="60%" alt="">
+        </div>
+        <!--RightContent-->
+        <div class="RightContent">
+            <h1>Welcome to my website!</h1>
+            I'm happy that you have visited my portfolio
+        </div>
+        <!--End of FirstContent-->
+      </div>
 
-          <h2>Technical Team - Developer Student Club</h2>
-          Sathyabama University, Chennai
-          <br><br>
-          <h2>Volunteer - CodeChef SIST Chapter</h2>
-          Sathyabama University, Chennai
-          <br><br>
-          <h2>Vice President - Computer Club</h2>
-          MCC School, Chetpet
-          <br><br>
-          <h2>Event Organizer - Equinox</h2>
-          MCC School, Chetpet
-          <br><br>
-          <h2>Community influencer - Unschool</h2>
-          Work from Home - Internship
-    </div>
+      <div id="Education">
+        <h1>Education</H1><br>
+            <a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
+              <img src="img/resume.png" id= "pic" onclick="visic();" height="24px" alt="Resume  ">
+            </a>
 
-    <div id="Project">
-      <h1>Projects</h1><br><a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-            <img src="img/download-logo.png" id= "pic" onclick="visic();" height="24px" alt="Resume  ">
-          </a><br><br>
+            <div class="school">
+              <p>
+                <H2>B.E Computer Science and Engineering</H2>
+                    Sathyabama Institute of Science and Technology<br>
+                    Autumn 20 - Spring 24
+              </p><br><br>
+              <p>
+                <H2>HSC - Physics, Chemistry, Maths, and Computer Science</H2>
+                    Madras Christian College Higher Secondary School<br>
+                    Summer 18 - Spring 20
+              </p><br><br>
+              <p>
+                <H2>SSLC</H2>
+                Loyola Matriculation Higher Secondary School<br>
+                Summer 16 - Spring 18
+              </p>
 
-          <h2>Morse Code Converter</h2>
-          <p>Python3 - <a href="https://github.com/Manoj-Paramsetti/Morse-Code" target="_blank">GitHub</a></p>
-          <br>
-          <h2>Encryptor - Decryptor</h2>
-          <p>Python3 - <a href="https://github.com/Manoj-Paramsetti/Encryptor-and-Decryptor" target="_blank">Github</a></p>
-          <br>
-          <h2>Hand Cricket Mobile Game</h2>
-          Kotlin, XML
-          <br><br>
-          <h2>Lite Web browser</h2>
-          Kotlin, Java, XML
-          <br><br>
-          <h2>Wordlist generator</h2>
-          Python3
-          <br><br>
-          <h2>Shoe e-commerce app</h2>
-          Flutter - Dart
-          <br><br>
-    </div>
+            </div>
+        <!--End of FirstContent-->
+      </div>
+      <div id="Experience">
+        <h1>Experience</h1><br><a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
+              <img src="img/download-logo.png" id= "pic" onclick="visic();" height="24px" alt="Resume">
+            </a><br><br>
 
-    <div id="Contact">
-      <h1>Contact Details</h1><br>
-      <h2><b>Paramsetti Manoj</b></h2>
-      <a href="mailto:paramsetti.manoj@gmail.com" target="_blank">paramsetti.manoj@gmail.com</a><br><br>
-      <p style="vertical-align:center;"><b>Address:<br></b><p style="color:#121212;">No.22, 7th Vembuli Amman Kovil St.,<br>Pallavaram, Chennai,<br>Tamil Nadu,<br>India - 600024</p><br>
-        <b>
-          <a href="mailto:paramsetti.manoj@gmail.com" target="_blank">E-Mail</a>&#160;
-          <a href="https://wa.me/message/WOFCHX7UO4LYO1" target="_blank">WhatsApp</a>&#160;
-          <a href="https://t.me/ManojParamsetti" target="_blank">Telegram</a>&#160;
-          <a href="https://www.linkedin.com/in/manoj-paramsetti/" target="_blank">LinkedIn</a>&#160;
-          <a href="https://github.com/Manoj-Paramsetti/" target="_blank">GitHub</a>
-        </b>
-      </p>
-    </div>
+            <h2>Technical Team - Developer Student Club</h2>
+            Sathyabama University, Chennai
+            <br><br>
+            <h2>Volunteer - CodeChef SIST Chapter</h2>
+            Sathyabama University, Chennai
+            <br><br>
+            <h2>Vice President - Computer Club</h2>
+            MCC School, Chetpet
+            <br><br>
+            <h2>Event Organizer - Equinox</h2>
+            MCC School, Chetpet
+            <br><br>
+            <h2>Community influencer - Unschool</h2>
+            Work from Home - Internship
+      </div>
 
+      <div id="Project">
+        <h1>Projects</h1><br><a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
+              <img src="img/download-logo.png" id= "pic" onclick="visic();" height="24px" alt="Resume  ">
+            </a><br><br>
+
+            <h2>Morse Code Converter</h2>
+            <p>Python3 - <a href="https://github.com/Manoj-Paramsetti/Morse-Code" target="_blank">GitHub</a></p>
+            <br>
+            <h2>Encryptor - Decryptor</h2>
+            <p>Python3 - <a href="https://github.com/Manoj-Paramsetti/Encryptor-and-Decryptor" target="_blank">Github</a></p>
+            <br>
+            <h2>Hand Cricket Mobile Game</h2>
+            Kotlin, XML
+            <br><br>
+            <h2>Lite Web browser</h2>
+            Kotlin, Java, XML
+            <br><br>
+            <h2>Wordlist generator</h2>
+            Python3
+            <br><br>
+            <h2>Shoe e-commerce app</h2>
+            Flutter - Dart
+            <br><br>
+      </div>
+
+      <div id="Contact">
+        <h1>Contact Details</h1><br>
+        <h2><b>Paramsetti Manoj</b></h2>
+        <a href="mailto:paramsetti.manoj@gmail.com" target="_blank">paramsetti.manoj@gmail.com</a><br><br>
+        <p style="vertical-align:center;"><b>Address:<br></b><p style="color:#121212;">No.22, 7th Vembuli Amman Kovil St.,<br>Pallavaram, Chennai,<br>Tamil Nadu,<br>India - 600024</p><br>
+          <b>
+            <a href="mailto:paramsetti.manoj@gmail.com" target="_blank">E-Mail</a>&#160;
+            <a href="https://wa.me/message/WOFCHX7UO4LYO1" target="_blank">WhatsApp</a>&#160;
+            <a href="https://t.me/ManojParamsetti" target="_blank">Telegram</a>&#160;
+            <a href="https://www.linkedin.com/in/manoj-paramsetti/" target="_blank">LinkedIn</a>&#160;
+            <a href="https://github.com/Manoj-Paramsetti/" target="_blank">GitHub</a>
+          </b>
+        </p>
+      </div>
+    <!--<footer>-->
     <div id="footer">
       &#169; All Rights Reserved.<br>
       <a href="https://manoj-paramsetti.github.io/m.html">
         <b style="color:white;">Credits</b>
       </a>
-      <a href="https://manoj-paramsetti.github.io/li.html">
+      <a href="https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io/blob/master/LICENSE">
         <b style="color:white;">License</b>
       </a>
     </div>
+    <script src="src/JS/scroll.js"></script>
+    <script type="text/javascript">
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
   </body>
 

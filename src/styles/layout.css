@@ -71,15 +71,7 @@ hr{
   font-size: 2.6vh;
   font-weight: normal;
 }
-H1{
-  font-size: 5vh;
-}
-H2{
-  font-size: 3vh;
-}
-H3{
-  font-size: 2.6vh;
-}
+
 #Topbar{
   background: rgba(255, 255, 255, 1);
   display: flex;

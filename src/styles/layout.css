@@ -17,7 +17,7 @@ body{
   z-index: 999;
   width: 100vw;
   height: 100vh;
-
+  display: none;
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg,rgba(22, 22, 22, 0.5),rgba(22, 22, 22, 0.6));

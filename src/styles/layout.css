@@ -10,7 +10,65 @@ body{
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-size: 2vh;
+  font-size: 2.6vh;
+}
+#aboutme{
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg,rgba(22, 22, 22, 0.5),rgba(22, 22, 22, 0.6));
+}
+#aboutme button{
+  border: 1px solid #121212;
+  background: #121212;
+  color: #FFF;
+  border-radius: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+hr{
+  border-bottom: 2px solid #EEEEEE;
+  border-top: 0px solid #EEEEEE;
+}
+.sub-container{
+  width: 50vw;
+  height: 90vh;
+  display: block;
+  padding: 40px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background: #FFFFFF;
+  overflow-y: hidden;
+}
+.sub-container-1{
+  display: block;
+  height: 100%;
+  background: #FFFFFF;
+  text-align: justify;
+  padding-right: 20px;
+  overflow-y: scroll;
+  font-size: 2.6vh;
+}
+.close{
+  height:2vh;
+  width:2vh;
+  background-image: url("img/close.png");
+}
+#aboutme H2{
+  font-size: 4vh;
+}
+#aboutme H3{
+  font-size: 2.6vh;
+  font-weight: normal;
 }
 H1{
   font-size: 5vh;
@@ -105,6 +163,17 @@ H3{
   padding-right: 40px;
 }
 
+.RightContent button{
+  border: 1px solid #5555dd;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+  background: #5555dd;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 #Education{
   background: #FFFFFF;
@@ -117,6 +186,7 @@ H3{
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 20px;
+  margin-bottom: -10px;
   border-radius: 20px 20px 0px 0px;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -146,6 +216,7 @@ H3{
   display: flex;
   padding-left: 35px;
   padding-right: 35px;
+  margin-bottom: -10px;
   border-radius: 20px 20px 0px 0px;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
@@ -163,6 +234,7 @@ H3{
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 20px;
+  margin-bottom: -10px;
   display:flex;
   border-radius: 20px 20px 0px 0px;
   box-shadow:
@@ -239,8 +311,8 @@ H3{
   }
   .RightContent{
     bottom: 0;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
   }
   #Rightbar{
     width:0%;
@@ -257,6 +329,10 @@ H3{
   }
 }
 @media only screen and (max-width: 900px) {
+  .sub-container{
+    width: 90vw;
+    height: 90vh;
+  }
   #FirstContent{
     display:static;
     width: 100%;

@@ -18,6 +18,16 @@
   </head>
 
   <body>
+    <div id="aboutme">
+      <div class="sub-container">
+        <H2>About me </H2><div class="close"><button type="button" onclick="visic()" name="button"><h4>Close</h4></button> </div><HR>
+          <br>
+          <div class="sub-container-1">
+          &nbsp;<h3>Hola! I'm excited that you came to read about myself. This is Manoj Paramsetti AKA Manoj. I'm a student at Sathyabama University and currently, I'm studying Bachelor Degree in Computer Science and Engineering (2020-Present).<br><br>I'm a self learner in physics, electrical, and mobile application.<br><br>I'm a member at Developer Student Club - Sathyabama and Volunteer at SIST Chapter. I participated in DSoC (Devscript) for contributing to projects and to learn Git. I'm a former Vice-President at Computer Club and Best Performer in Computer Science (2018-2019) at MCC School Chetpet.<br><br></h3> <b>Tech Stack:</b><br>Python3, Kotlin, Flask, Java, HTML5, CSS, Flutter, UI designing, and Robotics <br><br>
+          </div>
+      </div>
+    </div>
+
       <!--scrollable area-->
       <div id="Topbar">
         <!--left side of the titlebar-->
@@ -32,22 +42,22 @@
           <a href="#Project">Projects</a>
           <a href="#Contact">Contact</a>
         </div>
+
         <!--Menu only visible for 720px-->
         <div id="menu">
           <script>
-            function visic() {
-
-               var img1 = "https://Manoj-Paramsetti.github.io/img/resume.png";
-               var img2 = "https://Manoj-Paramsetti.github.io/img/download-logo.png";
-               var content = document.getElementById('pic');
-               console.log(content.src);
-               if (content.src == img2){
-                 content.src = img1;
-               }
-              else{
-                content.src = img2;
-              }
+            function parru(){
+              console.log("About me");
+              document.getElementById("aboutme").style.display = "flex";
             }
+
+            function visic() {
+              console.log("Closed");
+              var content2 = document.getElementById('sub-container');
+              var content3 = document.getElementById('sub-container-1');
+              document.getElementById("aboutme").style.display = "none";
+            }
+
           </script>
           <a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
             <img src="img/resume.png" id= "pic" onclick="visic();" height="30px" alt="Image not found">
@@ -65,7 +75,7 @@
         <!--RightContent-->
         <div class="RightContent">
             <h1>Welcome to my website!</h1>
-            I'm happy that you have visited my portfolio
+            I'm happy that you have visited my portfolio. Want to know about me briefly<br><br><button type="button" name="button" onclick="parru()">About me</button>
         </div>
         <!--End of FirstContent-->
       </div>

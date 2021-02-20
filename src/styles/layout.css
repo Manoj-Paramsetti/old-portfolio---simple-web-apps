@@ -10,8 +10,17 @@ body{
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
+  font-size: 2vh;
 }
-
+H1{
+  font-size: 5vh;
+}
+H2{
+  font-size: 3vh;
+}
+H3{
+  font-size: 2.6vh;
+}
 #Topbar{
   background: rgba(255, 255, 255, 1);
   display: flex;
@@ -29,7 +38,6 @@ body{
   width: 50%;
   padding-top: 2px;
   padding-left: 3vw;
-  font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
@@ -172,7 +180,7 @@ body{
   width:50%;
   position: static;
   padding-left: 20px;
-  padding-top: 10%;
+  padding-top: 1vh;
   vertical-align: middle;
   height: 100%;
   justify-content: center;

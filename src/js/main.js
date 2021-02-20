@@ -11,3 +11,6 @@ function visic() {
   var content3 = document.getElementById('sub-container-1');
   document.getElementById("aboutme").style.display = "none";
 }
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1200
+});

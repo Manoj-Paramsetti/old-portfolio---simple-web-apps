@@ -18,16 +18,16 @@ body{
   width: 100vw;
   position: fixed;
   padding: 20px 20px 20px 20px;
-/*  box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06);*/
+  box-shadow:
+    0 0px 2.2px rgba(0, 0, 0, 0.034),
+    0 0px 5.3px rgba(0, 0, 0, 0.048),
+    0 0px 10px rgba(0, 0, 0, 0.06);
 }
 
 #Leftbar{
   float: left;
   width: 50%;
-  padding-top: -2px;
+  padding-top: 2px;
   padding-left: 3vw;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
@@ -41,8 +41,8 @@ body{
 
 #Rightbar{
   float: right;
-  width: 60%;
-  height: inherit;
+  width: 70%;
+  height: auto;padding-top: 4px;
   justify-content: space-around;
   display: flex;
   font-weight: bold;
@@ -109,6 +109,7 @@ body{
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 20px;
+  border-radius: 20px 20px 0px 0px;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -137,6 +138,7 @@ body{
   display: flex;
   padding-left: 35px;
   padding-right: 35px;
+  border-radius: 20px 20px 0px 0px;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
       0 0 6.7px 5.3px rgba(0, 0, 0, 0.068),
@@ -154,24 +156,26 @@ body{
   padding-right: 35px;
   padding-bottom: 20px;
   display:flex;
+  border-radius: 20px 20px 0px 0px;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
       0 0 12.5px 10px rgba(0, 0, 0, 0.06);
 }
 
-#projectleft{
+#leftcontent{
   float: left;
-  display: block;
   width:50%;
 }
-#projectright{
+#rightcontent{
   float: right;
   width:50%;
+  position: static;
+  padding-left: 20px;
+  padding-top: 10%;
+  vertical-align: middle;
   height: 100%;
   justify-content: center;
-  display: flex;
-  text-align: right;
 }
 
 /*Base "a" of project*/
@@ -184,6 +188,7 @@ body{
   padding-left: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
+  border-radius: 20px 20px 0px 0px;
   background-color: #FFFFFF;
   box-shadow:
       0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -243,16 +248,37 @@ body{
     width: 100%;
   }
 }
-@media only screen and (max-width: 1000px) {
-  #projectright{
-    float: right;
-    width:50%;
-    justify-content: center;
-    display: none;
-    text-align: right;
+@media only screen and (max-width: 900px) {
+  #FirstContent{
+    display:static;
+    width: 100%;
   }
-  #projectleft{
-    float: left;
+  .LeftContent{
+    width:auto;
+    height: 60%;
+  }
+  .RightContent{
+    bottom: 0;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
+  #Project{
+    display: block;
+  }
+  #Experience{
+    display: block;
+  }
+  #Education{
+    display: block;
+  }
+  #rightcontent{
+    float:inherit;
+    position: static;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #leftcontent{
     width:100%;
     justify-content: center;
     text-align: center;

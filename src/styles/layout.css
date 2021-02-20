@@ -100,6 +100,7 @@ hr{
 
 #Rightbar{
   float: right;
+  overflow-x: scroll;
   width: 70%;
   height: auto;padding-top: 4px;
   justify-content: space-around;

@@ -22,11 +22,11 @@ body{
 .button-nav{
   height: auto;
   padding: 5px;
-  margin-top: 80px;
+  margin-top: 85px;
   height: 43px;
   justify-content: center;
   border-radius: 8px 0px 0px 8px;
-  background: linear-gradient(25deg,rgba(255, 22, 22, 0.1),rgba(22, 22, 255, 0.1));
+  background: linear-gradient(25deg,rgba(255, 22, 22, 0.3),rgba(22, 22, 255, 0.3));
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.044),
     0 1px 4px rgba(0, 0, 0, 0.058),
@@ -43,15 +43,23 @@ body{
   background: linear-gradient(90deg,rgba(22, 22, 22, 0.5),rgba(22, 22, 22, 0.6));
 }
 #aboutme button{
-  border: 1px solid #121212;
+  border: none;
+  outline:none;
   background: #121212;
   color: #FFF;
+  cursor: pointer;
   border-radius: 20px;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
 }
+#aboutme button:hover{
+  border: 1px solid #121212;
+  color: black;
+  background: #FFFFFF;
+}
+
 hr{
   border-bottom: 2px solid #EEEEEE;
   border-top: 0px solid #EEEEEE;
@@ -115,7 +123,8 @@ H3{
 #Leftbar{
   float: left;
   width: 50%;
-  color: linear-gradient();
+  color: #121212;
+  cursor: pointer;
   padding-top: 2px;
   padding-left: 3vw;
   font-family: 'Open Sans', sans-serif;

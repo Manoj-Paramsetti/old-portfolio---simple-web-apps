@@ -4,6 +4,10 @@ function parru(){
   document.getElementById("aboutme").style.display = "flex";
 }
 
+function showme(){
+  console.log("About me");
+}
+
 function visic() {
   document.body.style.overflow = "scroll";
   console.log("Closed");

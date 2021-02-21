@@ -8,6 +8,7 @@
     <!--Linking local res-->
     <link rel="stylesheet" href="src/styles/layout.css">
     <!--Linking external res-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,47 +24,58 @@
           <br>
           <div class="sub-container-1">
           &nbsp;
-      <h3>
-        <p>Hola! I'm excited that you came to read about me. This is Manoj Paramsetti AKA Manoj. I'm a student at Sathyabama University and currently, I'm studying Bachelor's Degree in Computer Science and Engineering (2020-Present).
-          <br><br>
-          I'm a self-learner in physics, electrical, and cyber security.
-          <br><br>
-          I'm a member of the Developer Student Club - Sathyabama and a Volunteer at the Codechef SIST Chapter. I participated in DSoC (Devscript) for contributing to projects and to learn Git. I'm a former Vice-President at Computer Club and Best Performer in Computer Science (2018-2019) at MCC School Chetpet.
-          <br><br>
-          Tech Stack:
-          <br>
-          Python3, Kotlin, Flask, Java, HTML5, CSS, Flutter, UI designing, and Robotics
-        </p>
-      </h3>
-      <br><br><br><br>
+          <h3>
+            <p>Hola! I'm excited that you came to read about me. This is Manoj Paramsetti AKA Manoj. I'm a student at Sathyabama University and currently, I'm studying Bachelor's Degree in Computer Science and Engineering (2020-Present).
+              <br><br>
+              I'm a self-learner in physics, electrical, and cyber security.
+              <br><br>
+              I'm a member of the Developer Student Club - Sathyabama and a Volunteer at the Codechef SIST Chapter. I participated in DSoC (Devscript) for contributing to projects and to learn Git. I'm a former Vice-President at Computer Club and Best Performer in Computer Science (2018-2019) at MCC School Chetpet.
+              <br><br>
+              Tech Stack:
+              <br>
+              Python3, Kotlin, Flask, Java, HTML5, CSS, Flutter, UI designing, and Robotics
+            </p>
+          </h3>
+          <br><br><br><br>
           </div>
+        </div>
       </div>
-    </div>
 
       <!--scrollable area-->
       <div id="Topbar">
         <!--left side of the titlebar-->
         <div id="Leftbar">
-          <a href="#FirstContent"><h3>Paramsetti Manoj</h3></a>
+          <a href="#FirstContent">Paramsetti Manoj</a>
         </div>
         <!--Rigth side of the titlebar-->
         <div id="Rightbar">
           <!--Navigation-->
-          <a href="#Education">Education</a>
-          <a href="#Experience">Experience</a>
-          <a href="#Project">Projects</a>
-          <a href="#Contact">Contact</a>
+          <button type="button" onclick="parru()">About</button>
+          <a href="#Education">&nbsp;LinkedIn&nbsp;</a>
+          <a href="#Experience">&nbsp;GitHub&nbsp;</a>
+          <a href="#Project">&nbsp;Resume&nbsp;</a>
         </div>
 
         <!--Menu only visible for 720px-->
         <div id="menu">
+          <p>
           <a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-            <img src="img/resume.png" id= "pic" onclick="visic();" height="30px" alt="Image not found">
+            <img src="img/resume.png" id= "pic" height="30px" alt="Image not found">
           </a>
+        </p>
         </div>
         <!--End of Topbar-->
       </div>
 
+      <div class="navbar">
+        <div class="button-nav">
+           <a href="#FirstContent"><img src="https://icons.getbootstrap.com/icons/house.svg" height="30px"></img></a>&nbsp;
+           <a href="#Education"><img src="https://icons.getbootstrap.com/icons/people.svg" height="30px"></img></a>&nbsp;
+           <a href="#Experience"><img src="https://icons.getbootstrap.com/icons/building.svg" height="30px"></img></a>&nbsp;
+           <a href="#Project"><img src="https://icons.getbootstrap.com/icons/pencil.svg" height="30px"></img></a>&nbsp;
+           <a href="#Contact"><img src="https://icons.getbootstrap.com/icons/telephone.svg" height="30px"></img></a>&nbsp;
+        </div>
+      </div>
 
       <div id="FirstContent">
         <!--LeftContent-->
@@ -82,8 +94,7 @@
 
           <div id="leftcontent">
           <h1>Education</H1><br>
-            <button type="button" name="button" onclick="parru()">About me</button>
-
+            <button onclick="parru()">About me</button>
             <div class="school">
               <p>
                 <H2>B.E Computer Science and Engineering</H2>

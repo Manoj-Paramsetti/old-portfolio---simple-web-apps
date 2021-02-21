@@ -12,6 +12,26 @@ body{
   overflow-y: scroll;
   font-size: 2.6vh;
 }
+.navbar{
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  width: auto;
+  display: flex;
+}
+.button-nav{
+  height: auto;
+  padding: 5px;
+  margin-top: 80px;
+  height: 43px;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.044),
+    0 1px 4px rgba(0, 0, 0, 0.058),
+    0 1px 9px rgba(0, 0, 0, 0.086);
+}
 #aboutme{
   position: fixed;
   z-index: 999;
@@ -62,7 +82,6 @@ hr{
 .close{
   height:2vh;
   width:2vh;
-  background-image: url("img/close.png");
 }
 #aboutme H2{
   font-size: 4vh;
@@ -71,11 +90,20 @@ hr{
   font-size: 2.6vh;
   font-weight: normal;
 }
-
+H1{
+  font-size: 5vh;
+}
+H2{
+  font-size: 3vh;
+}
+H3{
+  font-size: 2.6vh;
+}
 #Topbar{
   background: rgba(255, 255, 255, 1);
   display: flex;
   width: 100vw;
+  height: 74px;
   position: fixed;
   padding: 20px 20px 20px 20px;
   box-shadow:
@@ -94,15 +122,17 @@ hr{
 }
 /*Base of footer*/
 #Leftbar a{
+  font-size: 20px;
   color: #112121;
   text-decoration: none;
 }
 
 #Rightbar{
   float: right;
-  overflow-x: scroll;
-  width: 70%;
-  height: auto;padding-top: 4px;
+  width: 50%;
+  height: auto;
+  font-size: 20px;
+  padding-top: 4px;
   justify-content: space-around;
   display: flex;
   font-weight: bold;
@@ -110,7 +140,20 @@ hr{
 /*Base of Rightbar*/
 #Rightbar a{
   color: #112121;
+  font-size: 20px;
   text-decoration: none;
+}
+#Rightbar button{
+  border: 0px solid #FFFFFF;
+  color: #112121;
+  font-weight: bold;
+  font-size: 20px;
+  background: #FFFFFF;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
 }
 #Rightbar a:hover{
   color: #444499;
@@ -120,6 +163,7 @@ hr{
   color: #444499;
 }
 #menu{
+    display: none;
     visibility: hidden;
 }
 
@@ -315,6 +359,7 @@ hr{
     visibility: hidden;
   }
   #menu{
+    display: flex;
     visibility: visible;
   }
   #footer{
@@ -325,6 +370,20 @@ hr{
   }
 }
 @media only screen and (max-width: 900px) {
+  .navbar{
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  .button-nav{
+    padding: 5px;
+    height: auto;
+    width : 40px;
+    flex-direction: column;
+  }
   .sub-container{
     width: 90vw;
     height: 90vh;

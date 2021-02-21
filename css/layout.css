@@ -445,6 +445,9 @@ h1 {
     float:inherit;
     position: static;
     width:100%;
+    margin-top: 10px;
+    padding-left: 15vw;
+    padding-right: 15vw;
     align-items: center;
     justify-content: center;
   }

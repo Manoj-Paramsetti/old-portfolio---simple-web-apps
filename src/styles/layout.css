@@ -139,6 +139,7 @@ h1 {
   float: right;
   width: 50%;
   height: auto;
+  z-index:800;
   font-size: 20px;
   padding-top: 4px;
   justify-content: space-around;
@@ -151,25 +152,11 @@ h1 {
   font-size: 20px;
   text-decoration: none;
 }
-#Rightbar button{
-  border: 0px solid #FFFFFF;
-  color: #112121;
-  font-weight: bold;
-  font-size: 20px;
-  background: #FFFFFF;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin: 0;
-}
+
 #Rightbar a:hover{
   color: #444499;
 }
 
-#Rightbar a:active{
-  color: #444499;
-}
 #menu{
     display: none;
     visibility: hidden;
@@ -419,7 +406,7 @@ h1 {
     display:static;
     width: 100%;
   }
-  
+
   .LeftContent{
     position: static;
     animation-name: nothing;

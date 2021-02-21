@@ -339,7 +339,9 @@ h1 {
   text-decoration: none;
   color: #121212;
 }
-
+#Contact svg:hover{
+  fill: #ee0020;
+}
 #footer{
   font-family: 'Open Sans', sans-serif;
   background: #111111;

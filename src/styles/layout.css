@@ -115,10 +115,18 @@ H3{
 #Leftbar{
   float: left;
   width: 50%;
+  color: linear-gradient();
   padding-top: 2px;
   padding-left: 3vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+}
+
+
+h1 {
+  background: -webkit-linear-gradient(25deg,rgba(255, 22, 22, 0.9),rgba(22, 22, 255, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*Base of footer*/
 #Leftbar a{

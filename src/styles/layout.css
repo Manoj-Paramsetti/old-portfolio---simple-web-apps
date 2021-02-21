@@ -369,6 +369,8 @@ h1 {
   }
   .LeftContent{
     position: static;
+    animation-name: nothing;
+    animation-duration: 0s;
     width:auto;
     height: 60%;
   }
@@ -417,7 +419,11 @@ h1 {
     display:static;
     width: 100%;
   }
+  
   .LeftContent{
+    position: static;
+    animation-name: nothing;
+    animation-duration: 0s;
     width:auto;
     height: 60%;
   }

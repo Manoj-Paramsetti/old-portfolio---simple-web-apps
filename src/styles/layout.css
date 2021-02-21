@@ -381,6 +381,7 @@ H3{
   .button-nav{
     padding: 5px;
     height: auto;
+    margin-top: -10px;
     width : 40px;
     flex-direction: column;
   }

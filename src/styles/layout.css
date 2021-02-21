@@ -389,6 +389,7 @@ H3{
     height: 90vh;
   }
   #FirstContent{
+    padding-top: 74px;
     display:static;
     width: 100%;
   }
@@ -402,12 +403,15 @@ H3{
     padding-bottom: 20vh;
   }
   #Project{
+    padding-top: 74px;
     display: block;
   }
   #Experience{
+    padding-top: 74px;
     display: block;
   }
   #Education{
+    padding-top: 74px;
     display: block;
   }
   #rightcontent{

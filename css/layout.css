@@ -23,14 +23,18 @@ body{
   height: auto;
   padding: 5px;
   margin-top: 85px;
-  height: 43px;
-  justify-content: center;
-  border-radius: 8px 0px 0px 8px;
-  background: linear-gradient(25deg,rgba(255, 22, 22, 0.3),rgba(22, 22, 255, 0.3));
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px 0px 0px 10px;
+  background: /*linear-gradient(130deg,rgba(255, 22, 22, 0.3),rgba(22, 22, 255, 0.3))*/#ffffff;
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.044),
     0 1px 4px rgba(0, 0, 0, 0.058),
     0 1px 9px rgba(0, 0, 0, 0.086);
+}
+.button-nav a:hover{
+  margin-top: -3px;
 }
 #aboutme{
   position: fixed;
@@ -176,7 +180,7 @@ h1 {
 }
 
 
-#FirstContent{
+#Home{
   background: #FFFFFF;
   width: 100vw;
   min-height: 100vh;
@@ -308,7 +312,7 @@ h1 {
   width:50%;
   position: static;
   padding-left: 20px;
-  padding-top: 1vh;
+  margin-top, margin-right: auto;
   vertical-align: middle;
   height: 100%;
   justify-content: center;
@@ -359,7 +363,7 @@ h1 {
   #Leftbar{
     width: 92%;
   }
-  #FirstContent{
+  #Home{
     display:list-item;
     width: 100%;
   }
@@ -410,7 +414,7 @@ h1 {
     width: 90vw;
     height: 90vh;
   }
-  #FirstContent{
+  #Home{
     padding-top: 74px;
     display:static;
     width: 100%;

@@ -1,0 +1,356 @@
+$white : #FFFFFF
+@mixin font
+    font-family: 'Open Sans', sans-serif
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+@mixin shadow()
+    box-shadow: 0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 0 12.5px 10px rgba(0, 0, 0, 0.06)
+body
+    background-color: $white
+    width: 100vw
+    @include font()
+    overflow-x: hidden
+    overflow-y: scroll
+    font-size: 2.6vh
+.navbar
+    position: fixed
+    height: 100vh
+    right: 0
+    width: auto
+    display: flex
+.button-nav
+    height: auto
+    padding: 5px
+    margin-top: 85px
+    height: 40px
+    display: flex
+    justify-content: space-around
+    border-radius: 10px 0px 0px 10px
+    background: $white
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.044), 0 1px 4px rgba(0, 0, 0, 0.058), 0 1px 9px rgba(0, 0, 0, 0.086)
+    a:hover
+        margin-top: -3px
+#aboutme
+    position: fixed
+    z-index: 999
+    width: 100vw
+    height: 100vh
+    display: none
+    justify-content: center
+    align-items: center
+    background: linear-gradient(90deg,rgba(22, 22, 22, 0.5),rgba(22, 22, 22, 0.6))
+    button
+        border: none
+        outline:none
+        background: #121212
+        color: #FFF
+        cursor: pointer
+        border-radius: 20px
+        padding-left: 4px
+        padding-right: 4px
+        padding-top: 4px
+        padding-bottom: 4px
+    button:hover
+        border: 1px solid #121212
+        color: black
+        background: $white
+    H2
+        font-size: 4vh
+    H3
+        font-size: 2.6vh
+        font-weight: normal
+hr
+  border-bottom: 2px solid #EEEEEE
+  border-top: 0px solid #EEEEEE
+.sub-container
+    width: 50vw
+    height: 90vh
+    display: block
+    padding: 40px
+    border-radius: 20px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 5vh
+    margin-bottom: 5vh
+    background: #FFFFFF
+    overflow-y: hidden
+.sub-container-1
+  display: block
+  height: 100%
+  background: #FFFFFF
+  text-align: justify
+  padding-right: 20px
+  overflow-y: scroll
+  font-size: 2.6vh
+  margin-bottom: 20px
+.close
+  height: 2vh
+  width: 2vh
+H1
+  font-size: 5vh
+
+H2
+  font-size: 3vh
+
+H3
+  font-size: 2.6vh
+#Topbar
+    background: rgba(255, 255, 255, 1)
+    display: flex
+    width: 100vw
+    height: 74px
+    position: fixed
+    padding: 20px 20px 20px 20px
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.044), 0 1px 4px rgba(0, 0, 0, 0.058), 0 1px 9px rgba(0, 0, 0, 0.086)
+#Leftbar
+    float: left
+    width: 50%
+    color: #121212
+    cursor: pointer
+    padding-top: 2px
+    padding-left: 3vw
+    font-family: 'Open Sans', sans-serif
+    font-weight: bold
+    a
+        font-size: 20px
+        color: #112121
+        text-decoration: none
+h1 
+    background: -webkit-linear-gradient(25deg,rgba(255, 22, 22, 0.9),rgba(22, 22, 255, 0.9))
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+#Rightbar
+    float: right
+    width: 50%
+    height: auto
+    z-index: 800
+    font-size: 20px
+    padding-top: 4px
+    justify-content: space-around
+    display: flex
+    font-weight: bold
+    a
+        color: #112121
+        font-size: 20px
+        text-decoration: none
+    a:hover
+        color: #444499
+#menu
+    display: none
+    visibility: hidden
+#Dialog
+    visibility: visible
+#Home
+    background: #FFFFFF
+    width: 100vw
+    min-height: 100vh
+    height: auto
+    display: flex
+    padding-left: 20px
+    padding-top: 90px
+    padding-bottom: 20px
+.LeftContent
+    float: left
+    width: 90%
+    height: auto
+    vertical-align: middle
+    overflow-x: auto
+    margin-top: 30px
+    background-repeat: no-repeat
+    background-size: cover
+    animation-name: float
+    animation-duration: 2s
+    animation-direction: alternate
+    animation-play-state: running
+    animation-iteration-count: infinite
+@keyframes float 
+    0%
+        margin-top: 0
+.RightContent
+    float: right
+    text-align: right
+    padding-top: 40vh
+    padding-right: 40px
+#Education
+    background: #FFFFFF
+    padding-top: 8%
+    color: black
+    width: 100vw
+    min-height: 100vh
+    height: auto
+    display: flex
+    padding-left: 35px
+    padding-right: 35px
+    padding-bottom: 50px
+    margin-bottom: -10px
+    border-radius: 20px 20px 0px 0px
+    @include shadow()
+    button
+        border: 1px solid #5555dd
+        border-radius: 20px
+        color: white
+        margin-left: auto
+        margin-right: auto
+        font-size: 25px
+        background: #5555dd
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 5px
+        padding-bottom: 5px
+.school
+    padding-top: 35px
+    H1,H2,H3,H4,H5,H6
+        margin: 0
+        padding: 0
+#Experience
+    background: #FFFFFF
+    padding-top: 8%
+    color: Black
+    width: 100vw
+    min-height: 100vh
+    height: auto
+    padding-bottom: 20px
+    z-index: 4
+    display: flex
+    padding-left: 35px
+    padding-right: 35px
+    margin-bottom: -10px
+    border-radius: 20px 20px 0px 0px
+    @include shadow()
+#Project
+    background: #FFFFFF
+    padding-top: 8%
+    color: black
+    width: 100vw
+    min-height: 100vh
+    height: auto
+    padding-left: 35px
+    padding-right: 35px
+    padding-bottom: 20px
+    margin-bottom: -10px
+    display: flex
+    border-radius: 20px 20px 0px 0px
+    @include shadow()
+    a
+        text-decoration: none
+        color: #121212
+#leftcontent
+    float: left
+    width: 50%
+
+#rightcontent
+    float: right
+    width: 50%
+    position: static
+    padding-left: 20px
+    margin-top: auto
+    margin-right: auto
+    vertical-align: middle
+    height: 100%
+    justify-content: center
+#Contact 
+    padding-left: 20px
+    padding-bottom: 20px
+    padding-top: 20px
+    border-radius: 20px 20px 0px 0px
+    background-color: #FFFFFF
+    @include shadow() 
+    a
+        text-decoration: none
+        color: #121212
+    svg:hover
+        fill: #ee0020
+#footer
+    font-family: 'Open Sans', sans-serif
+    background: #111111
+    color: white
+    width: 100vw
+    height: auto
+    text-align: center
+    position: absolute
+    padding: 10px
+    padding-bottom: 10px
+    a
+        text-decoration: none
+@media only screen and (max-width: 720px) 
+    #Leftbar
+        width: 92%
+    #Home
+        display:list-item
+        width: 100%
+    .LeftContent
+        position: static
+        animation-name: nothing
+        animation-duration: 0s
+        width:auto
+        height: 60%
+    .RightContent
+        bottom: 0
+        padding-top: 10vh
+        padding-bottom: 30vh
+    #Rightbar
+        width: 0%
+        visibility: hidden
+    #menu
+        display: flex
+        visibility: visible
+    #footer
+        height: auto
+    body 
+        width: 100%
+@media only screen and (max-width: 900px) 
+    .navbar
+        position: fixed
+        height: 100vh
+        right: 0
+        width: auto
+        display: flex
+        align-items: center
+    .button-nav
+        padding: 5px
+        height: auto
+        margin-top: -10px
+        width : 40px
+        flex-direction: column
+    .sub-container
+        width: 90vw
+        height: 90vh
+    #Home
+        padding-top: 74px
+        display:static
+        width: 100%
+    .LeftContent
+        position: static
+        animation-name: nothing
+        animation-duration: 0s
+        width:auto
+        height: 60%
+    .RightContent
+        bottom: 0
+        padding-top: 20vh
+        padding-bottom: 20vh
+    #Project
+        padding-top: 74px
+        display: block
+    #Experience
+        padding-top: 74px
+        display: block
+    #Education
+        padding-top: 74px
+        display: block
+    #rightcontent
+        float: inherit
+        position: static
+        width: 100%
+        margin-top: 10px
+        padding-left: 15vw
+        padding-right: 15vw
+        align-items: center
+        justify-content: center
+    
+    #leftcontent
+        width: 100%
+        justify-content: center
+        text-align: center

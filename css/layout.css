@@ -312,7 +312,8 @@ h1 {
   width:50%;
   position: static;
   padding-left: 20px;
-  margin-top, margin-right: auto;
+  margin-top: auto;
+  margin-right: auto;
   vertical-align: middle;
   height: 100%;
   justify-content: center;

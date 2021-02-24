@@ -24,7 +24,7 @@ addEventListener("scroll",e=>{
   length = query.length;
   for(i=0;i<query.length;i++){
     var introPosition = query[i].getBoundingClientRect().top;
-    if (introPosition >= 200){query[i].style.opacity = 0;}
+    if (introPosition >= 300){query[i].style.opacity = 0;}
     else{query[i].style.opacity = 1;}
     console.log(introPosition);
   }

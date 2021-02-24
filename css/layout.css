@@ -350,9 +350,10 @@ h1 {
 
 #leftcontent {
   float: left;
-  width: 50%;
-  -webkit-transition: 0.5s all ease-in;
-  transition: 0.5s all ease-in;
+  width: 0%;
+  opacity: 0;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 
 #rightcontent {
@@ -500,7 +501,7 @@ h1 {
             justify-content: center;
   }
   #leftcontent {
-    width: 100%;
+    width: 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

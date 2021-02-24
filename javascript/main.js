@@ -18,3 +18,14 @@ function visic() {
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 1200
 });
+
+addEventListener("scroll",e=>{
+  var query = document.querySelectorAll("#leftcontent");
+  length = query.length;
+  for(i=0;i<query.length;i++){
+    var introPosition = query[i].getBoundingClientRect().top;
+    if (introPosition >= 200){query[i].style.opacity = 0;}
+    else{query[i].style.opacity = 1;}
+    console.log(introPosition);
+  }
+});

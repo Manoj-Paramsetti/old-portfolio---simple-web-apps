@@ -7,7 +7,7 @@
 
 body {
   background-color: #FFFFFF;
-  width: 100vw;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -35,7 +35,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 10px 0px 0px 10px;
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.44);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.044), 0 1px 4px rgba(0, 0, 0, 0.058), 0 1px 9px rgba(0, 0, 0, 0.086);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.044), 0 1px 4px rgba(0, 0, 0, 0.058), 0 1px 9px rgba(0, 0, 0, 0.086);
 }
@@ -206,21 +206,26 @@ h1 {
 
 #Home {
   background: #FFFFFF;
+  color: black;
+  z-index: -200;
   width: 100vw;
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   padding-left: 20px;
   padding-top: 90px;
   padding-bottom: 20px;
+  padding-right: 35px;
+  margin-bottom: -10px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .LeftContent {
   float: left;
-  width: 90%;
-  height: auto;
+  width: 60%;
+  height: 100vh;
   vertical-align: middle;
   overflow-x: auto;
   margin-top: 30px;
@@ -346,6 +351,8 @@ h1 {
 #leftcontent {
   float: left;
   width: 50%;
+  -webkit-transition: 0.5s all ease-in;
+  transition: 0.5s all ease-in;
 }
 
 #rightcontent {
@@ -401,22 +408,6 @@ h1 {
   #Leftbar {
     width: 92%;
   }
-  #Home {
-    width: 100%;
-  }
-  .LeftContent {
-    position: static;
-    -webkit-animation-name: nothing;
-            animation-name: nothing;
-    -webkit-animation-duration: 0s;
-            animation-duration: 0s;
-    height: 60%;
-  }
-  .RightContent {
-    bottom: 0;
-    padding-top: 10vh;
-    padding-bottom: 30vh;
-  }
   #Rightbar {
     width: 0%;
     visibility: hidden;
@@ -464,20 +455,23 @@ h1 {
   }
   #Home {
     padding-top: 74px;
-    width: 100%;
+    z-index: -200;
+    position: relative;
+    display: block;
+    width: 95vw;
   }
   .LeftContent {
-    position: static;
-    -webkit-animation-name: nothing;
-            animation-name: nothing;
-    -webkit-animation-duration: 0s;
-            animation-duration: 0s;
-    height: 60%;
+    width: 100vw;
+    height: 50%;
+    float: none;
+    -webkit-animation: none;
+            animation: none;
   }
   .RightContent {
-    bottom: 0;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    float: right;
+    width: 60%;
+    padding: 0;
+    margin: 0;
   }
   #Project {
     padding-top: 74px;

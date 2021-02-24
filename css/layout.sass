@@ -9,7 +9,7 @@ $white : #FFFFFF
     box-shadow: 0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 0 12.5px 10px rgba(0, 0, 0, 0.06)
 body
     background-color: $white
-    width: 100vw
+    width: 100%
     @include font()
     overflow-x: hidden
     overflow-y: scroll
@@ -28,7 +28,7 @@ body
     display: flex
     justify-content: space-around
     border-radius: 10px 0px 0px 10px
-    background: $white
+    background: rgba(255, 255, 255, 0.44)
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.044), 0 1px 4px rgba(0, 0, 0, 0.058), 0 1px 9px rgba(0, 0, 0, 0.086)
     a:hover
         margin-top: -3px
@@ -144,17 +144,22 @@ h1
     visibility: visible
 #Home
     background: #FFFFFF
+    color: black
+    z-index: -200
     width: 100vw
-    min-height: 100vh
-    height: auto
+    height: 100vh
     display: flex
+    position: relative
     padding-left: 20px
     padding-top: 90px
     padding-bottom: 20px
+    padding-right: 35px
+    margin-bottom: -10px
+    border-radius: 20px 20px 0px 0px
 .LeftContent
     float: left
-    width: 90%
-    height: auto
+    width: 60%
+    height: 100vh
     vertical-align: middle
     overflow-x: auto
     margin-top: 30px
@@ -173,6 +178,7 @@ h1
     text-align: right
     padding-top: 40vh
     padding-right: 40px
+
 #Education
     background: #FFFFFF
     padding-top: 8%
@@ -239,7 +245,7 @@ h1
 #leftcontent
     float: left
     width: 50%
-
+    transition: 0.5s all ease-in
 #rightcontent
     float: right
     width: 50%
@@ -277,19 +283,6 @@ h1
 @media only screen and (max-width: 720px) 
     #Leftbar
         width: 92%
-    #Home
-        display:list-item
-        width: 100%
-    .LeftContent
-        position: static
-        animation-name: nothing
-        animation-duration: 0s
-        width:auto
-        height: 60%
-    .RightContent
-        bottom: 0
-        padding-top: 10vh
-        padding-bottom: 30vh
     #Rightbar
         width: 0%
         visibility: hidden
@@ -319,18 +312,20 @@ h1
         height: 90vh
     #Home
         padding-top: 74px
-        display:static
-        width: 100%
+        z-index: -200
+        position: relative
+        display: block
+        width: 95vw
     .LeftContent
-        position: static
-        animation-name: nothing
-        animation-duration: 0s
-        width:auto
-        height: 60%
+        width: 100vw
+        height: 50%
+        float: none
+        animation: none
     .RightContent
-        bottom: 0
-        padding-top: 20vh
-        padding-bottom: 20vh
+        float: right
+        width: 60%
+        padding: 0
+        margin: 0
     #Project
         padding-top: 74px
         display: block

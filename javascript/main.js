@@ -15,10 +15,10 @@ function visic() {
   document.getElementById("aboutme").style.display = "none"
 }
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1200
+	speed: 2500
 });
 
-
+/*removing vanilla scroll effect
 addEventListener("scroll",e=>{
   var query = document.querySelectorAll("#leftcontent")
   length = query.length
@@ -48,6 +48,7 @@ addEventListener("scroll",e=>{
     }
   }
 })
+*/
 addEventListener("keydown",e=>{
   var things = ["#Home","#Education","#Experience","#Project", "#Contact"]
   console.log(e["key"])

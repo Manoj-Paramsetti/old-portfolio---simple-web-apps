@@ -52,12 +52,38 @@ addEventListener("scroll",e=>{
 addEventListener("keydown",e=>{
   var things = ["#Home","#Education","#Experience","#Project", "#Contact"]
   console.log(e["key"])
-  if (e["key"] == "a"){
+  if (e["key"] == "a" || e["key"] == "A"){
     document.body.style.overflow = "hidden"
     console.log("About me")
     document.getElementById("aboutme").style.display = "flex"
   } 
-  if (e["key"] == "c" || e["key"] == "x" || e["key"] == "x"){
+  if (e["key"] == "f" || e["key"] == "F"){
+    var body = document.getElementById("body")
+    if(i==0){
+      i=1
+      if (body.requestFullscreen) {
+        body.requestFullscreen()
+      } else if (body.webkitRequestFullscreen) {
+        body.webkitRequestFullscreen()
+      } else if (body.msRequestFullscreen) { 
+        body.msRequestFullscreen()
+      }
+    }
+    //closeFullScreen
+    else if(i==1){
+      console.log("exitfullscreen")
+      i=0
+      if(document.exitFullscreen) {
+        document.exitFullscreen()
+      } else if(document.mozCancelFullScreen) {
+        document.mozCancelFullScreen()
+      } else if(document.webkitExitFullscreen) {
+        document.webkitExitFullscreen()
+      }
+    }
+    else{alert("something went wrong. Try to refresh the page.")}  
+  }
+  if (e["key"] == "c" || e["key"] == "x" || e["key"] == "q" || e["key"] == "C" || e["key"] == "X" || e["key"] == "Q"){
     if(document.getElementById("aboutme").style.display == "flex"){
       document.body.style.overflow = "scroll";
       console.log("Closed");

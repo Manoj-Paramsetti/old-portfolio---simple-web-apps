@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io/issues"
   },
-  "homepage": "https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io#readme"
+  "homepage": "https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.4.0"
+  }
 }

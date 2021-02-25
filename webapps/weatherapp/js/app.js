@@ -3,6 +3,7 @@ const form = document.querySelector("#search")
 const input = document.getElementById("text")
 const error = document.getElementById("error")
 const card = document.getElementById("card")
+var a = 0
 var data = undefined
 function senData(){
     const inputVal = input.value
@@ -25,13 +26,7 @@ async function funcName(apiKey,location){
     }
 }
 function Geolocation(){
-    if(i==0){
     document.getElementById("Geolocation").innerHTML="Longitude: "+data["coord"]["lon"]+"<br />Latitude: "+data["coord"]["lat"]+"<br />Country: "+data["sys"]["country"]+"<br />Place: "+data["name"]
-    i=1
-    }
-    else{
-        i=0
-    }
 }
 function Temperature(){
     document.getElementById("Temperature").innerHTML="Temperature: "+data["main"]["temp"]+"<br />Feels like: "+data["main"]["feels_like"]+"<br />Minimum Temperature: "+data["main"]["temp_min"]+"<br />Maximum Temperature: "+data["main"]["temp_max"]
@@ -40,8 +35,10 @@ function Condition(){
     document.getElementById("Condition").innerHTML="Weather Condition: "+data["weather"][0]["main"]+"<br />Pressure: "+data["main"]["pressure"]+"<br />Humidity: "+data["main"]["humidity"]+"<br />Visibility: "+data["visibility"]+"<br />wind speed: "+data["wind"]["speed"]+"<br />wind direction: "+data["wind"]["deg"]+" deg"+"<br />clouds: "+data["clouds"]["all"]+"%"
 }
 addEventListener("keydown",e=>{
-    console.log(e)
   if (e["key"]=="Enter"){
-      senData()
+    document.getElementById("Condition").innerHTML = ""
+    document.getElementById("Temperature").innerHTML = ""
+    document.getElementById("Geolocation").innerHTML = ""
+    senData()
   }  
 })

@@ -9,8 +9,9 @@ body {
 }
 
 #Header {
-  width: 100%;
+  width: auto;
   padding: 18px;
+  overflow-x: clip;
   font-family: 'Poppins', san-serif;
   background: #121221;
   color: white;

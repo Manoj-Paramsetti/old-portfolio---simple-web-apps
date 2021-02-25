@@ -14,6 +14,9 @@ async function funcName(apiKey,location){
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid=7aa99fca6a848c8f87838df4566fbf10&units=metric")
     console.log(response)
     data = await response.json()
+    document.getElementById("Condition").innerHTML = ""
+    document.getElementById("Temperature").innerHTML = ""
+    document.getElementById("Geolocation").innerHTML = ""
     console.log(data)
     if(data["cod"]==400||data["cod"]==404){
         error.innerHTML=data["message"]
@@ -36,9 +39,6 @@ function Condition(){
 }
 addEventListener("keydown",e=>{
   if (e["key"]=="Enter"){
-    document.getElementById("Condition").innerHTML = ""
-    document.getElementById("Temperature").innerHTML = ""
-    document.getElementById("Geolocation").innerHTML = ""
     senData()
   }  
 })

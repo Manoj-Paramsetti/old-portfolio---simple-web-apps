@@ -196,8 +196,8 @@ hr {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 4vh;
+  margin-bottom: 6vh;
   background: #FFFFFF;
   overflow-y: hidden;
 }
@@ -208,8 +208,6 @@ hr {
   background: #FFFFFF;
   text-align: justify;
   padding-right: 20px;
-  overflow-y: scroll;
-  font-size: 2.6vh;
   margin-bottom: 20px;
 }
 

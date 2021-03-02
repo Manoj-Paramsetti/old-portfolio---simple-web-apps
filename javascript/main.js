@@ -1,21 +1,18 @@
-let i = 0
-function parru(){
-  document.body.style.overflow = "hidden"
-  console.log("About me")
-  document.getElementById("aboutme").style.display = "flex"
+function contact() {
+    document.body.style.overflow = "hidden"
+    console.log("About me")
+    document.getElementById("aboutme").style.display = "flex"
 }
 
-function showme(){
-  console.log("About me")
+
+function hideContact() {
+    document.body.style.overflow = "scroll";
+    console.log("Closed");
+    document.getElementById("aboutme").style.display = "none"
 }
 
-function visic() {
-  document.body.style.overflow = "scroll";
-  console.log("Closed");
-  document.getElementById("aboutme").style.display = "none"
-}
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 2500
+    speed: 2500
 });
 
 /*removing vanilla scroll effect
@@ -48,14 +45,14 @@ addEventListener("scroll",e=>{
     }
   }
 })
-*/
+
 addEventListener("keydown",e=>{
   var things = ["#Home","#Education","#Experience","#Project", "#Contact"]
   console.log(e["key"])
   if (e["key"] == "a" || e["key"] == "A"){
     document.body.style.overflow = "hidden"
     console.log("About me")
-    document.getElementById("aboutme").style.display = "flex"
+    document.getElementById("Contact").style.display = "flex"
   } 
   if (e["key"] == "f" || e["key"] == "F"){
     var body = document.getElementById("body")
@@ -90,4 +87,4 @@ addEventListener("keydown",e=>{
       document.getElementById("aboutme").style.display = "none"
     }
   }
-})
+})*/

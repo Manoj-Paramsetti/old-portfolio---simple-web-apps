@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!--title Section-->
     <title>
-      Paramsetti Manoj | Portfolio 
+        Paramsetti Manoj | Portfolio
     </title>
     <!--Linking local res-->
     <link rel="stylesheet" href="css/layout.css">
@@ -13,208 +14,130 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!--viewport data-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  </head>
+</head>
 
-  <body id = "body">
+<body>
     <div id="aboutme">
-      <div class="sub-container">
-        <H2>About me </H2><div class="close"><button onclick="visic()"><h4>Close</h4></button> </div><HR>
-          <br>
-          <div class="sub-container-1">
-          &nbsp;
-          <h3>
-            <p>Hola! I'm excited that you came to read about me. This is Manoj Paramsetti AKA Manoj. I'm a student at Sathyabama University and currently, I'm studying Bachelor's Degree in Computer Science and Engineering (2020-Present).
-              <br><br>
-              I'm a self-learner in physics, electrical, and cyber security.
-              <br><br>
-              I'm a member of the Developer Student Club - Sathyabama and a Volunteer at the Codechef SIST Chapter. I participated in DSoC (Devscript) for contributing to projects and to learn Git. I'm a former Vice-President at Computer Club and Best Performer in Computer Science (2018-2019) at MCC School Chetpet.
-              <br><br>
-              Tech Stack:
-              <br>
-              Python3, Kotlin, Flask, Java, HTML5, CSS, SASS, Flutter, UI designing, and Robotics
-            </p>
-          </h3>
-          <br><br><br><br>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar">
-        <div class="button-nav">
-         <a href="#Home" title="Home"><img src="https://icons.getbootstrap.com/assets/icons/house.svg" height="30px"></img></a>&nbsp;&nbsp;
-         <a href="#Education"title="Education"><img src="https://icons.getbootstrap.com/assets/icons/people.svg" height="30px"></img></a>&nbsp;&nbsp;
-         <a href="#Experience"title="Experience"><img src="https://icons.getbootstrap.com/assets/icons/building.svg" height="30px"></img></a>&nbsp;&nbsp;
-         <a href="#Project"title="Projects"><img src="https://icons.getbootstrap.com/assets/icons/pencil.svg" height="30px"></img></a>&nbsp;&nbsp;
-         <a href="#Contact"title="Contact Details"><img src="https://icons.getbootstrap.com/assets/icons/telephone.svg" height="30px"></img></a>
-         </div>
-      </div>
-      <!--scrollable area-->
-      <div id="Topbar">
-        <!--left side of the title bar-->
-        <div id="Leftbar">
-          <a onclick="parru()">Paramsetti Manoj</a>
-        </div>
-        <!--Rigth side of the title bar-->
-        <div id="Rightbar">
-          <a href="" onclick="parru()">About</a>
-          <a href= "https://www.linkedin.com/in/manoj-paramsetti/">LinkedIn</a>
-          <a href= "https://www.github.com/manoj-paramsetti/">GitHub</a>
-          <a href="http://bit.ly/3pF0Ulh">Resume</a>
-          <br>
-        </div>
-
-        <!--Menu only visible for 720px-->
-        <div id="menu">
-          <p>
-          <a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-            <img src="img/resume.png" id= "pic" height="30px" alt="Image not found">
-          </a>
-        </p>
-        </div>
-        <!--End of Topbar-->
-      </div>
-
-
-      <div id="Home">
-        <!--LeftContent-->
-        <div class="LeftContent">
-            <img src="SVG/firstcon.svg" width="80%" alt="">
-        </div>
-
-        <!--RightContent-->
-        <div class="RightContent">
-            <h1>Welcome to my website!</h1>
-            I'm happy that you have visited my portfolio<br><br>
-        </div>
-        <!--End of Home-->
-      </div>
-
-      <div id="Education">
-          <div id="leftcontent">
-          <h1>Education</H1><br>
-            <button onclick="parru()">About me</button>
-            <div class="school">
-              <p>
-                <H2>B.E Computer Science and Engineering</H2>
-                    Sathyabama Institute of Science and Technology<br>
-                    Autumn 20 - Spring 24
-              </p><br><br>
-              <p>
-                <H2>HSC - Physics, Chemistry, Maths, and Computer Science</H2>
-                    Madras Christian College Higher Secondary School<br>
-                    Summer 18 - Spring 20
-              </p><br><br>
-              <p>
-                <H2>SSLC</H2>
-                Loyola Matriculation Higher Secondary School<br>
-                Summer 16 - Spring 18
-              </p>
+        <div class="sub-container">
+            <H3>Contact Details </H3>
+            <div class="close">
+                <button onclick="hideContact()"><h4>Close</h4></button>
             </div>
-            </div>
-            <div id="rightcontent">
-              <img src= "img/c.svg" width="100%"></img>
-            </div>
-        <!--End of Home-->
-      </div>
-      <div id="Experience">
-
-        <div id="leftcontent">
-        <h1>Experience & Work</h1><br>
-            <a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-              <img src="img/download-logo.png" id= "pic" onclick="visic();" height="28px" alt="Resume">
-            </a>
-            <br><br>
-
-            <h2>Technical Team - Developer Student Club</h2>
-            Sathyabama University, Chennai
-            <br><br>
-            <h2>Volunteer - CodeChef SIST Chapter</h2>
-            Sathyabama University, Chennai
-            <br><br>
-            <h2>Vice President - Computer Club</h2>
-            MCC School, Chetpet
-            <br><br>
-            <h2>Event Organizer - Equinox</h2>
-            MCC School, Chetpet
-            <br><br>
-            <h2>Community influencer - Unschool</h2>
-            Work from Home - Internship
-        </div>
-        <div id="rightcontent">
-          <img src= "img/work.jpg" width="100%"></img>
-        </div>
-      </div>
-
-      <div id="Project">
-        <div id="leftcontent">
-            <h1>Projects</h1><br><a href="https://drive.google.com/file/d/1yJRO9gsKzwjuYChZ7v8P5DOxutcAhAEF/view?usp=sharing" target="_blank">
-              <img src="img/download-logo.png" id= "pic" onclick="visic();" height="24px" alt="Resume  ">
-              </a><br><br>
-
-            <h2>Morse Code Converter</h2>
-            <p>Python3 - <a href="https://github.com/Manoj-Paramsetti/Morse-Code" target="_blank">GitHub</a></p>
+            <HR>
             <br>
-            <h2>Encryptor - Decryptor</h2>
-            <p>Python3 - <a href="https://github.com/Manoj-Paramsetti/Encryptor-and-Decryptor" target="_blank">Github</a></p>
-            <br>
-            <h2>Hand Cricket Mobile Game</h2>
-            Kotlin, XML
-            <br><br>
-            <h2>Lite Web browser</h2>
-            Kotlin, Java, XML
-            <br><br>
-            <h2>Wordlist generator</h2>
-            Python3
-            <br><br>
-            <h2>Shoe e-commerce app</h2>
-            Flutter - Dart
-            <br><br>
-          </div>
-            <div id="rightcontent">
-              <img src= "img/project-icon.svg" width="100%"></img>
+            <div class="sub-container-1">
+                <h5>
+                    <p>Email: <a href="mailto:paramsetti.manoj@gmail.com">paramsetti.manoj@gmail.com</a><br> Linkedin:
+                        <a href="http://linkedin.com/in/manoj-paramsetti" target="_blank" rel="noopener noreferrer">http://linkedin.com/in/manoj-paramsetti</a>
+                    </p>
+
+                </h5>
             </div>
         </div>
-
-      <div id="Contact">
-        <h1>Contact Details</h1><br>
-        <h2><b>Paramsetti Manoj</b></h2>
-        <a href="mailto:paramsetti.manoj@gmail.com" target="_blank">paramsetti.manoj@gmail.com</a><br><br>
-        <p style="vertical-align:center;"><b>Address:<br></b><p style="color:#121212;">No.22, 7th Vembuli Amman Kovil St.,<br>Pallavaram, Chennai,<br>Tamil Nadu,<br>India - 600024</p><br>
-          <b>
-            <a href="https://wa.me/message/WOFCHX7UO4LYO1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-            </svg></a>&#160;
-            <a href="https://www.linkedin.com/in/manoj-paramsetti/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg></a>&#160;
-            <a href="https://t.me/ManojParamsetti" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
-            </svg></a>&#160;
-            <a href="https://github.com/Manoj-Paramsetti/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-              </svg>
-            </a>&#160;
-            <a href="mailto:paramsetti.manoj@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
-              <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"/>
-            </svg> </a>
-          </b>
-        </p>
-      </div>
-    <!--<footer>-->
-    <div id="footer">
-      &#169; All Rights Reserved.<br>
-      <a href="https://manoj-paramsetti.github.io/m.html">
-        <b style="color:white;">Credits</b>
-      </a>
-      <a href="https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io/blob/master/LICENSE">
-        <b style="color:white;">License</b>
-      </a>
-      <br>
     </div>
+    <section id="Nav">
+        <p>Paramsetti Manoj</p>
+        <ul>
+            <a href="#line">Home</a>
+            <a href="#Projects-1">Projects</a>
+            <a href="#Work">Work</a>
+            <a onclick="contact()">Contact</a>
+        </ul>
+    </section>
+    <section id="line"></section>
+    <section id="intro">
+        I'm pursuing undergraduate degree on Computer Science and Engineering at Sathyabama University.
+    </section>
+    <Section id="techStack">
+        <h1>Tech Stack</h1>
+        Flutter, Kotlin, Java, Python, C++, .NET Framework, UI Design
+    </Section>
+    <section id="flexBox">
+        <div class="card">
+            <div class="cardContent">
+                <H4>I added some of my projects here. Click the button to scroll for you</H4>
+                <a href="#Projects-1">
+                    <button>
+                Projects
+                </button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardContent">
+                <H4>To know more about my education and experience.</H4>
+                <a href="#Projects-1">
+                    <button>
+                Resume
+                </button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardContent">
+                <H4>Came to know about my contact details</H4>
+                <a onclick="contact()">
+                    <button>
+                Contact
+                </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="Project">
+        <section id="subProject">
+            <section id="Projects-1">
+                <h1>Projects</h1>
+                <br>
+                <h3>Britto Shoe App</h3>
+                <section id="projectDes">
+                    It is an app for shoe store developed using flutter. It's based on e-commerce mart. this is just a semi-working model so It's restricted to some extent. This project is developed by concentrating the UI design and I used FirebaseAuth and FireStore for
+                    the backend purposes. This is a cross platform application.
+                    <br><a href="#Projects-2 "><button>Next</button></a>
+                </section>
+            </section>
+            <section id="Projects-2">
+                <h3>Password Creator</h3>
+                <section id="projectDes">
+                    This is a CLI application developed by using python3. This project is based on security purposes. It will generate a strong password with the username and simple password then using some math it will create a strong password with character and symbols.
+                    This tool is developed to conduct CTF also.
+                    <a href="#Projects-1">
+                        <p><button>Previous</button></a>&#160;
+                    <a href="#Projects-3"><button>Next</button></a></p>
+                </section>
+
+            </section>
+            <section id="Projects-3">
+                <h3>Hand Cricket Mobile Game</h3>
+                <section id="projectDes">
+                    It is an mobile app game. In this app we can play hand cricket game with computer or with friends. It's the most favorite games for kids in school time. To have a nostalgia I made this app. This have a very easy interface for kids and it is developed
+                    during the corona pandemic time. This is my first app for me in kotlin and Java.
+                    <a href="#Projects-2">
+                        <p><button>Previous</button></a>&#160;
+                    <a href="#Projects-4"><button>Next</button></a></p>
+                </section>
+            </section>
+            <section id="Projects-4">
+                <h3>Lite Browser</h3>
+                <section id="projectDes">
+                    I created a small app for lite version of mobile version. where you can access 75% of the website. It also provides to use all social media apps in full screen and It have many shortcuts for the website like you can use social media, track flights, check
+                    the cyclone by using windy.
+                    <br><a href="#Projects-3"><button>Previous</button></a>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section id="Work">
+
+    </section>
+    <section id="Contact">
+
+    </section>
     <script src="javascript/scroll.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
-  </body>
+</body>
 
 </html>

@@ -333,5 +333,11 @@ hr {
     padding-right: 20px;
     height: auto;
   }
+  .sub-container {
+    width: 90vw;
+  }
+  .sub-container-1 {
+    overflow-x: auto;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

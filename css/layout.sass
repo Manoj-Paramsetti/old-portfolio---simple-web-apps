@@ -23,7 +23,7 @@ body
     height: 90px
     width: 100%
     position: fixed
-    z-index: 99
+    z-index: 2
     display: flex
     padding-top: 30px
     padding-bottom: 30px
@@ -52,7 +52,7 @@ body
         width: 40%
 #line
     position: fixed
-    z-index: 9999999999
+    z-index: 4
     background: linear-gradient(90deg,#124e96,#ff008e)
     height: 2px
     width: 100vw 
@@ -107,13 +107,14 @@ body
         box-shadow: 0 4px rgba(255, 255, 255, 0.034),0 6px rgba(255, 255, 255, 0.048),0 8px rgba(255, 255, 255, 0.06)
 #aboutme
     position: fixed
-    z-index: 9999999
+    z-index: 6
     width: 100vw
     height: 100vh
     display: none
     justify-content: center
     align-items: center
-    background: linear-gradient(90deg,rgba(22, 22, 22, 0.5),rgba(22, 22, 22, 0.6))
+    background: linear-gradient(45deg,#00FF88,#00FFDD)
+    animation-delay: 11s
     button
         border: none
         outline:none
@@ -168,9 +169,26 @@ hr
     text-justify: distribute
 .card:hover
     background: linear-gradient(45deg,#EEE)
+#topButton
+    position: fixed
+    z-index: 10
+    right: 0
+    bottom: 0
+    display: flex
+    margin-right: -50px
+    margin-bottom: 20px
+    button
+        outline: 0
+        border: 0
+        background: black
+        border-radius: 70px
+        padding: 10px
+    img
+        filter: invert(1)
+
 #Project
     display: flex
-    width: 100vw
+    width: 100%
     flex-direction: row
     overflow-x: scroll
     scroll-behavior: smooth
@@ -194,7 +212,7 @@ hr
 #Projects-1, #Projects-3
     position: relative
     height: auto
-    width: 100vw
+    width: 100%
     color: #111
     background: #FFF
     //background-image: url(../img/bg-2.png)
@@ -206,7 +224,7 @@ hr
     position: relative
     height: auto
     color: #FFF
-    width: 100vw
+    width: 100%
     background: #111
     //background-image: url(../img/bg-2.png)
     background-size: cover

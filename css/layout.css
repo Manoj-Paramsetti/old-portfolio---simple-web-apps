@@ -23,7 +23,7 @@ body {
   height: 90px;
   width: 100%;
   position: fixed;
-  z-index: 99;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +67,7 @@ body {
 
 #line {
   position: fixed;
-  z-index: 9999999999;
+  z-index: 4;
   background: -webkit-gradient(linear, left top, right top, from(#124e96), to(#ff008e));
   background: linear-gradient(90deg, #124e96, #ff008e);
   height: 2px;
@@ -151,7 +151,7 @@ body {
 
 #aboutme {
   position: fixed;
-  z-index: 9999999;
+  z-index: 6;
   width: 100vw;
   height: 100vh;
   display: none;
@@ -161,8 +161,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(22, 22, 22, 0.5)), to(rgba(22, 22, 22, 0.6)));
-  background: linear-gradient(90deg, rgba(22, 22, 22, 0.5), rgba(22, 22, 22, 0.6));
+  background: linear-gradient(45deg, #00FF88, #00FFDD);
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
 }
 
 #aboutme button {
@@ -235,11 +236,36 @@ hr {
   background: linear-gradient(45deg, #EEE);
 }
 
+#topButton {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -50px;
+  margin-bottom: 20px;
+}
+
+#topButton button {
+  outline: 0;
+  border: 0;
+  background: black;
+  border-radius: 70px;
+  padding: 10px;
+}
+
+#topButton img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 #Project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -273,7 +299,7 @@ hr {
 #Projects-1, #Projects-3 {
   position: relative;
   height: auto;
-  width: 100vw;
+  width: 100%;
   color: #111;
   background: #FFF;
   background-size: cover;
@@ -285,7 +311,7 @@ hr {
   position: relative;
   height: auto;
   color: #FFF;
-  width: 100vw;
+  width: 100%;
   background: #111;
   background-size: cover;
   padding: 90px;

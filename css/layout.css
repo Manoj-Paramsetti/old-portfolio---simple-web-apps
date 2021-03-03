@@ -126,13 +126,17 @@ body {
 }
 
 .cardContent h4, .cardContent h6 {
-  color: #121212;
+  color: black;
+}
+
+.cardContent h4:hover, .cardContent h6:hover {
+  color: white;
 }
 
 .cardContent button {
   color: white;
   background: linear-gradient(140deg, #121212, #121212);
-  outline: none;
+  outline: 0;
   border: 0;
   bottom: 0;
   padding: 10px;
@@ -161,27 +165,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(45deg, #00FF88, #00FFDD);
+  background: linear-gradient(45deg, #00FFDD, magenta);
   -webkit-animation-delay: 11s;
           animation-delay: 11s;
 }
 
-#aboutme button {
-  border: none;
-  background: #121212;
-  color: #FFF;
-  cursor: pointer;
-  border-radius: 20px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#aboutme button:hover {
-  border: 1px solid #121212;
-  color: black;
-  background: #FFF;
+button {
+  color: white;
+  background: linear-gradient(140deg, #0000CC, #FF00FF);
+  background-size: 100%;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+  bottom: 0;
+  padding: 10px;
+  width: 90px;
+  font-weight: 900;
+  border-radius: 1000px;
+  -webkit-box-shadow: 0 0.6vh rgba(255, 0, 255, 0.034), 0 0.8vh rgba(255, 0, 0, 0.0048), 0 1vh rgba(255, 0, 0, 0.006);
+          box-shadow: 0 0.6vh rgba(255, 0, 255, 0.034), 0 0.8vh rgba(255, 0, 0, 0.0048), 0 1vh rgba(255, 0, 0, 0.006);
 }
 
 hr {
@@ -230,10 +232,6 @@ hr {
   background: linear-gradient(45deg, #00FF88, #00FFDD);
   border-radius: 30px;
   text-justify: distribute;
-}
-
-.card:hover {
-  background: linear-gradient(45deg, #EEE);
 }
 
 #topButton {

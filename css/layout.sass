@@ -87,14 +87,16 @@ body
     justify-content: space-between
     flex-direction: column
     h4, h6
-        color: #121212
+        color: black
         //background: -webkit-linear-gradient(25deg,rgba(255, 22, 22, 1),rgba(22, 22, 255, 1))
         //-webkit-background-clip: text
         //-webkit-text-fill-color: transparent
+    h4:hover, h6:hover
+        color: white
     button
         color: white
         background: linear-gradient(140deg, #121212, #121212)
-        outline: none
+        outline: 0
         border : 0
         bottom: 0
         padding: 10px
@@ -113,23 +115,21 @@ body
     display: none
     justify-content: center
     align-items: center
-    background: linear-gradient(45deg,#00FF88,#00FFDD)
+    background: linear-gradient(45deg,#00FFDD, magenta)
     animation-delay: 11s
-    button
-        border: none
-        outline:none
-        background: #121212
-        color: #FFF
-        cursor: pointer
-        border-radius: 20px
-        padding-left: 4px
-        padding-right: 4px
-        padding-top: 4px
-        padding-bottom: 4px
-    button:hover
-        border: 1px solid #121212
-        color: black
-        background: #FFF
+button
+        color: white
+        background: linear-gradient(140deg, #0000CC,#FF00FF)
+        background-size: 100%
+        outline: none
+        border : 0
+        text-decoration: none
+        bottom: 0
+        padding: 10px
+        width: 90px
+        font-weight: 900
+        border-radius: 1000px
+        box-shadow: 0  0.6vh rgba(255, 0, 255, 0.034),0 0.8vh rgba(255, 0, 0, 0.0048),0 1vh rgba(255, 0, 0, 0.006)
 hr
   border-bottom: 2px solid #EEEEEE
   border-top: 0px solid #EEEEEE
@@ -167,8 +167,6 @@ hr
     background: linear-gradient(45deg,#00FF88,#00FFDD)
     border-radius: 30px 
     text-justify: distribute
-.card:hover
-    background: linear-gradient(45deg,#EEE)
 #topButton
     position: fixed
     z-index: 10

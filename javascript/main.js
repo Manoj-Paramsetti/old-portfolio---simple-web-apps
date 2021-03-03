@@ -1,18 +1,39 @@
 function contact() {
     document.body.style.overflow = "hidden"
-    console.log("About me")
-    document.getElementById("aboutme").style.display = "flex"
+    var about = document.getElementById("aboutme");
+    about.style.display = "flex"
+    TweenMax.fromTo(about, 2, { height: "0%", opacity: "0%" }, { height: "100%", opacity: "100%" });
 }
 
+var card = document.getElementById("flexBox");
+var tb = document.getElementById("topButton");
+var butBool = true
+console.log(card.getBoundingClientRect().bottom)
+addEventListener("scroll", () => {
+    if (butBool) {
+        if (card.getBoundingClientRect().bottom < 100) {
+            console.log("came")
+            butBool = false
+            TweenMax.fromTo(tb, 1, { marginRight: '-45px' }, { marginRight: '10px' })
+        }
+    }
+    if (card.getBoundingClientRect().bottom > 100) {
+        butBool = true
+        TweenMax.to(tb, 1, { marginRight: '-50px' })
+    }
+})
+addEventListener("keydown", () => {})
 
 function hideContact() {
     document.body.style.overflow = "scroll";
     console.log("Closed");
-    document.getElementById("aboutme").style.display = "none"
+    var about = document.getElementById("aboutme");
+    TweenMax.fromTo(about, 2, { height: "100%", opacity: "100%" }, { height: "0%", opacity: "0%" }).fromTo(about, 2, { display: "flex" }, { display: "none" })
+
 }
 
 var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 2500
+    speed: 2300
 });
 
 /*removing vanilla scroll effect

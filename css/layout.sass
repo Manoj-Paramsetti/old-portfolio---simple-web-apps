@@ -56,6 +56,9 @@ body
     background: linear-gradient(90deg,#124e96,#ff008e)
     height: 2px
     width: 100vw 
+button:focus
+    outline: none
+
 #intro
     padding-left: 90px
     padding-right: 0px
@@ -93,8 +96,8 @@ body
     button
         color: white
         background: linear-gradient(140deg, #121212, #121212)
-        outline: none
-        border : 0
+        outline: 0px
+        border : 0px
         bottom: 0
         padding: 10px
         width: 80px
@@ -109,7 +112,7 @@ body
     z-index: 6
     width: 100vw
     height: 100vh
-    display: flex
+    //display: flex
     display: none
     justify-content: center
     align-items: center
@@ -127,8 +130,10 @@ body
         padding: 6px
         padding-top: 3px
         padding-bottom: 3px
+    button:hover
+        transform: scale(1.08,1.08)
     a
-        color: #121212
+        color: #FFF
         text-decoration-line: none
         font-weight: bolder
         height: 70px
@@ -136,35 +141,35 @@ body
         margin: 5px
         padding: 5px
         border-radius: 5px
-        background-color: #DDDDDD
     
 hr
   border-bottom: 2px solid #EEEEEE
   border-top: 0px solid #EEEEEE
 .sub-container
-    width: 50vw
+    width: auto
     height: auto
-    display: block
     padding: 40px
     border-radius: 20px
     margin-left: auto
     margin-right: auto
+    padding: 20px
     margin-top: 4vh
     margin-bottom: 6vh
     background: #FFFFFF
     overflow-y: hidden
 .sub-container-1
-  display: block
-  height: 100%
-  background: #FFFFFF
-  text-align: justify
-  padding-right: 20px
-  margin-bottom: 20px
-  a:hover
-        background: #121212
+    height: 100%
+    overflow-y: auto
+    background: #FFFFFF
+    padding-right: 20px
+    margin-bottom: 20px 
+    button
+        margin: 4px
+        width: 120px
+        background: #0000FF
 .close
-  height: 2vh
-  width: 2vh
+    height: 2vh
+    width: 2vh
 .card
     margin-top: 80px
     width: 250px
@@ -272,6 +277,14 @@ hr
         padding-right: 20px 
         height: auto
     .sub-container
-        width: 90vw
+        width: 50vw
     .sub-container-1
         overflow-x: auto
+        width: 100%
+        padding: 0px
+        margin-right: auto
+        margin-left: auto
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center

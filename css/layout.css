@@ -74,6 +74,10 @@ body {
   width: 100vw;
 }
 
+button:focus {
+  outline: none;
+}
+
 #intro {
   padding-left: 90px;
   padding-right: 0px;
@@ -131,8 +135,8 @@ body {
 .cardContent button {
   color: white;
   background: linear-gradient(140deg, #121212, #121212);
-  outline: none;
-  border: 0;
+  outline: 0px;
+  border: 0px;
   bottom: 0;
   padding: 10px;
   width: 80px;
@@ -153,9 +157,6 @@ body {
   z-index: 6;
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -181,8 +182,13 @@ body {
   padding-bottom: 3px;
 }
 
+#aboutme button:hover {
+  -webkit-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
+}
+
 #aboutme a {
-  color: #121212;
+  color: #FFF;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   font-weight: bolder;
@@ -191,7 +197,6 @@ body {
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
-  background-color: #DDDDDD;
 }
 
 hr {
@@ -200,13 +205,13 @@ hr {
 }
 
 .sub-container {
-  width: 50vw;
+  width: auto;
   height: auto;
-  display: block;
   padding: 40px;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
   margin-top: 4vh;
   margin-bottom: 6vh;
   background: #FFFFFF;
@@ -214,16 +219,17 @@ hr {
 }
 
 .sub-container-1 {
-  display: block;
   height: 100%;
+  overflow-y: auto;
   background: #FFFFFF;
-  text-align: justify;
   padding-right: 20px;
   margin-bottom: 20px;
 }
 
-.sub-container-1 a:hover {
-  background: #121212;
+.sub-container-1 button {
+  margin: 4px;
+  width: 120px;
+  background: #0000FF;
 }
 
 .close {
@@ -371,10 +377,24 @@ hr {
     height: auto;
   }
   .sub-container {
-    width: 90vw;
+    width: 50vw;
   }
   .sub-container-1 {
     overflow-x: auto;
+    width: 100%;
+    padding: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=layout.css.map */

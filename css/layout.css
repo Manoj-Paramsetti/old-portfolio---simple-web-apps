@@ -244,10 +244,10 @@ hr {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 20px;
-  -webkit-box-shadow: 1px 0px 2px 1px #dd5555, 0px 1px 2px 1px #5555dd;
-          box-shadow: 1px 0px 2px 1px #dd5555, 0px 1px 2px 1px #5555dd;
+  -webkit-box-shadow: 2.7px -4px 0px 1px #FF008E, -1px 0px 0px 3px #661296;
+          box-shadow: 2.7px -4px 0px 1px #FF008E, -1px 0px 0px 3px #661296;
   text-align: center;
-  background: #FAFAFA;
+  background: #FFFFFF;
 }
 
 .card:hover {

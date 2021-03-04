@@ -69,8 +69,7 @@ body
     display: relative
 #techStack
     position: relative
-    margin-top: 20px
-    color: black
+    margin-top: 40px
     text-align: center
 #flexBox  
     display: flex
@@ -110,26 +109,35 @@ body
     z-index: 6
     width: 100vw
     height: 100vh
+    display: flex
     display: none
     justify-content: center
     align-items: center
-    background: linear-gradient(45deg,#00FF88,#00FFDD)
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.8))
     animation-delay: 11s
     button
         border: none
         outline:none
         background: #121212
         color: #FFF
+        font-family: "Poppins"
+        font-size: 14px
         cursor: pointer
-        border-radius: 20px
-        padding-left: 4px
-        padding-right: 4px
-        padding-top: 4px
-        padding-bottom: 4px
-    button:hover
-        border: 1px solid #121212
-        color: black
-        background: #FFF
+        border-radius: 8px
+        padding: 6px
+        padding-top: 3px
+        padding-bottom: 3px
+    a
+        color: #121212
+        text-decoration-line: none
+        font-weight: bolder
+        height: 70px
+        width: 22px
+        margin: 5px
+        padding: 5px
+        border-radius: 5px
+        background-color: #DDDDDD
+    
 hr
   border-bottom: 2px solid #EEEEEE
   border-top: 0px solid #EEEEEE
@@ -152,6 +160,8 @@ hr
   text-align: justify
   padding-right: 20px
   margin-bottom: 20px
+  a:hover
+        background: #121212
 .close
   height: 2vh
   width: 2vh
@@ -162,13 +172,16 @@ hr
     padding-left: 20px
     padding-right: 20px
     border-radius: 20px
-    box-shadow: 4px 8px 4px 0 rgba(255, 255, 255, 0.009)
+    box-shadow: 0px 3px 5px #DD5555,0px 3px 10px #5555DD
     text-align: center
-    background: linear-gradient(45deg,#00FF88,#00FFDD)
+    background: #FAfAfa
+//    background: linear-gradient(45deg,#00FF88,#00FFDD)
     border-radius: 30px 
     text-justify: distribute
+    
 .card:hover
-    background: linear-gradient(45deg,#EEE)
+    transform: scale(1.009,1.009)
+
 #topButton
     position: fixed
     z-index: 10

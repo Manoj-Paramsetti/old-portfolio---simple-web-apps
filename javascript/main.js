@@ -2,8 +2,13 @@ function contact() {
     document.body.style.overflow = "hidden"
     var about = document.getElementById("aboutme");
     about.style.display = "flex"
-    TweenMax.fromTo(about, 2, { height: "0%", opacity: "0%" }, { height: "100%", opacity: "100%" });
-}
+    var sub = document.getElementById("sub-container");
+    var sub1 = document.getElementById("sub-container-1");
+
+    TweenMax.fromTo(about, 2, { height: "0%", opacity: "0%" }, { height: "100%", opacity: "100%" })
+    TweenMax.to(sub, 2, {display: "flex"})
+    TweenMax.to(sub1, 2, {display: "flex"})
+  }
 
 var card = document.getElementById("flexBox");
 var tb = document.getElementById("topButton");
@@ -27,10 +32,14 @@ addEventListener("keydown", () => {})
 function hideContact() {
     document.body.style.overflow = "scroll";
     console.log("Closed");
+    var sub = document.getElementById("sub-container");
+    var sub1 = document.getElementById("sub-container-1");
     var about = document.getElementById("aboutme");
-    TweenMax.fromTo(about, 2, { height: "100%", opacity: "100%" }, { height: "0%", opacity: "0%" }).fromTo(about, 2, { display: "flex" }, { display: "none" })
+    TweenMax.fromTo(about, 2, { height: "100%", opacity: "100%" }, { height: "0%", opacity: "0%" })
+    TweenMax.to(sub, 2, {display: "none"})
+   TweenMax.to(sub1, 2, {display: "none"})
+  }
 
-}
 
 var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 2300

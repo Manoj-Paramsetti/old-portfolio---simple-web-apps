@@ -1,11 +1,12 @@
 # Manoj-Paramsetti.github.io
-Hey Floks!
+Hey Floks!💥
 
-I'm happy that you're visited my GitHub Page. This respository is for my personal portfolio where you can find my contact deatils and much more. Try to contribute for my portfolio website.
-Try to visit https://manoj-paramsetti.github.io
+I'm happy that you're visited my GitHub Page repository. This respository is for my personal portfolio where you can find my contact deatils and much more. It's open to contribute my portfolio website to develop on UI and content.
 
-## Author
-Paramsetti Manoj
+visit my [website](https://manoj-paramsetti.github.io) for more info.
 
-## Used Languages
+## Developed by ✏️
+Myself😊
+
+## Used Languages 📙 
 CSS, JavaScript and HTML

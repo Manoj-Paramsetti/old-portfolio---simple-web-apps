@@ -10,6 +10,7 @@ body {
   color: white;
   font-family: 'poppins';
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #Heading {
@@ -75,6 +76,7 @@ body {
   border: 0;
   border-radius: 3px;
   padding: 4px;
+  color: white;
 }
 
 #App .card {
@@ -102,7 +104,8 @@ body {
 }
 
 #App #cards {
-  height: calc(60vh - 50px);
+  margin-top: 10px;
+  height: calc(60vh - 60px);
   overflow-y: scroll;
   padding: 3px;
   scrollbar-width: none;
@@ -125,7 +128,7 @@ body {
     display: none;
   }
   #cards {
-    height: calc(70vh - 50px);
+    height: calc(70vh - 60px);
   }
 }
 /*# sourceMappingURL=index.css.map */

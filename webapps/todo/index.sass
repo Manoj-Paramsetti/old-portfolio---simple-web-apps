@@ -1,11 +1,13 @@
 *
     margin: 0
-    box-sizing: 0
+    box-sizing: border-box
     padding: 0
 body
     background: #27da80
     color: white
     font-family: 'poppins'
+    width: 100vw
+    height: 100vh
     overflow-x: hidden
     overflow-y: hidden
 #Heading
@@ -44,7 +46,7 @@ body
     input
         border: 0px solid grey
         height: 25px
-        width: 90%
+        width: 88%
         background: #EEE
         border-radius: 3px
         padding: 10px
@@ -95,16 +97,16 @@ body
             display: none
 @media screen and ( max-width: 600px )
     #prop__1
+        overflow: hidden
         display: none
     #App
         width: 90vw
-        height: 70vh
-    #prop__2
-        display: none
-    #cards
-        height: calc(70vh - 60px)
+        height: 50vh
+        #cards
+            height: calc(50vh - 60px)
+    //#prop__2
+    //    display: none
 @media screen and ( max-height:  600px)
-    #prop__2
+    #prop__2, #prop__1
         display: none
-    
-        
+

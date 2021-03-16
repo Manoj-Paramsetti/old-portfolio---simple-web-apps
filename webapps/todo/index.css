@@ -124,5 +124,8 @@ body {
   #prop__2 {
     display: none;
   }
+  #cards {
+    height: calc(70vh - 50px);
+  }
 }
 /*# sourceMappingURL=index.css.map */
